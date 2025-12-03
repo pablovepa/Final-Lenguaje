@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Game Warrior</title>
+	<title>Vinoteca La Vid Dorada</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Game Warrior">
-	<meta name="keywords" content="warrior, game, creative, html">
+	<meta name="description" content="Vinoteca La Vid Dorada">
+	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
