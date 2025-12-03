@@ -23,16 +23,16 @@
         <a class="nav-link" href="games.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="create_vino.php">Crear</a>
+        <a class="nav-link" href="vino/create_vino.php">Crear</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="read_vino.php">Leer</a>
+          <a class="nav-link" href="vino/read_vino.php">Leer</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="update_vino .php">Actualizar</a>
+          <a class="nav-link" href="vino/update_vino.php">Actualizar</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="delete_vino.php">Eliminar</a>
+          <a class="nav-link" href="vino/delete_vino.php">Eliminar</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" href="gestion.php">Gestion</a>

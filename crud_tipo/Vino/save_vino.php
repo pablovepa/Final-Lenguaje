@@ -2,11 +2,13 @@
 include("db.php");
 
 if (isset($_POST['guardar_registro'])) {
-    $nombre = $_POST['nombre'];
+    $nombrevino = $_POST['nombrevino'];
     $precio = $_POST['precio'];
     $tipo_de_vino = $_POST['tipo_de_vino'];
-    $id_proveedor = $_POST['proveedor'];
-    $id_bodega = $_POST['bodega'];
+    $id_tipos = $_POST['id_tipos'];
+    $id_bodegas = $_POST['id_bodegas'];
+    $id_proveedores = $_POST['id_proveedores'];
+    
 
     // Procesar imagen
     if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
