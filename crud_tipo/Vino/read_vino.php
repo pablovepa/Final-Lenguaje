@@ -1,5 +1,5 @@
-<?php include("includes/header_vino.php"); ?>
-<?php include("db.php"); ?>
+<?php include __DIR__ . '/../includes/header_vino.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <div class="card text-center">
     <div class="card-body">
@@ -19,8 +19,7 @@ if (isset($_GET['mensaje'])) {
 
 <div class="row">
 <?php
-$query = "
-SELECT 
+$query = "SELECT 
     v.nombrevino,
     v.precio,
     v.stock,
@@ -30,7 +29,7 @@ SELECT
 FROM vinos v
 JOIN tipos t ON v.id_tipos = t.id_tipos
 JOIN bodegas b ON v.id_bodegas = b.id_bodegas
-JOIN proveedores p ON v.id_proveedores = p.id_proveedores
+JOIN proveedores p ON v.id_proveedores = p.id_proveedores;
 ";
 
 $result = mysqli_query($conn, $query);
@@ -58,4 +57,4 @@ if ($result && mysqli_num_rows($result) > 0) {
 ?>
 </div>
 
-<?php include("includes/footer.php"); ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

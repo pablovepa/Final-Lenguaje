@@ -1,5 +1,5 @@
-<?php include("includes/header_vino.php"); ?>
-<?php include("db.php"); ?>
+<?php include __DIR__ . '/../includes/header_vino.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div class="card text-center w-50 shadow">
@@ -13,10 +13,10 @@
                     <input type="text" name="nombrevino" class="form-control mb-3"
                         placeholder="Nombre del vino" required>
 
-                    <input type="number" name="precio" class="form-control mb-3"
+                    <input type="text" name="precio" class="form-control mb-3"
                         placeholder="Precio" required>
 
-                    <input type="number" name="stock" class="form-control mb-3"
+                    <input type="text" name="stock" class="form-control mb-3"
                         placeholder="Cantidad en stock" required>
 
                     <!-- TIPOS -->
@@ -64,6 +64,6 @@
     </div>
 </div>
 
-<?php include("includes/footer.php"); ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 
 

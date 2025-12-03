@@ -1,5 +1,5 @@
-<?php include("includes/header_vino.php")?>
-<?php include("db.php")?>
+<?php include __DIR__ . '/../includes/header_vino.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
     <div class ="card text-center">
         <div class="card-body">
@@ -16,6 +16,7 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Precio</th>
+                            <th>Stock</th>
                             <th>Tipo_de_vino</th>
                             <th>Proveedor</th>
                             <th>Bodega</th>
@@ -32,8 +33,8 @@
 
                                 <tr>    
                                 <td><?php echo $row['nombre']?></td>
-                                <td><?php echo $row['nombre']?></td>
                                 <td><?php echo $row['precio']?></td>
+                                <td><?php echo $row['stock']?></td>
                                 <td><?php echo $row['tipo_de_vino']?></td>
                                 <td><?php echo $row['proveedor']?></td>
                                 <td><?php echo $row['bodega']?></td>
@@ -54,5 +55,5 @@
         </div>
     </div> 
 
-<?php include("includes/footer.php")?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 

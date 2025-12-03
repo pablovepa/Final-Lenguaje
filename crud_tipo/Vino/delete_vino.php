@@ -1,6 +1,5 @@
-<?php include("includes/header_vino.php")?>
-<?php include("db.php")?>
-
+<?php include __DIR__ . '/../includes/header_vino.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
     <div class ="card text-center">
         <div class="card-body">
             <h1 class="card-title">Eliminar Vinos</h1>
@@ -52,5 +51,4 @@
             </div>
         </div>
     </div> 
-
-<?php include("includes/footer.php")?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
