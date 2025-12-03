@@ -14,7 +14,7 @@
                             <th>Usuario</th>
                             <th>Contraseña</th>
                             <th>Tipo Usuario</th>
-                            <th>Nombre</th>
+                            <th>Nombre Usuario</th>
                             <th>Email</th>
                             <th>Telefono</th>
                         </tr>

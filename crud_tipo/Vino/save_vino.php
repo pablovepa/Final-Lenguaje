@@ -4,9 +4,9 @@ include("db.php");
 if (isset($_POST['guardar_registro'])) {
     $nombre = $_POST['nombre'];
     $precio = $_POST['precio'];
-    $stock = $_POST['stock'];
-    $id_plataforma = $_POST['id_plataforma'];
-    $id_genero = $_POST['id_genero'];
+    $tipo_de_vino = $_POST['tipo_de_vino'];
+    $id_proveedor = $_POST['proveedor'];
+    $id_bodega = $_POST['bodega'];
 
     // Procesar imagen
     if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] === UPLOAD_ERR_OK) {
@@ -29,8 +29,8 @@ if (isset($_POST['guardar_registro'])) {
     }
 
     // Guardar videojuego en la tabla 'videojuegos' con referencia a la imagen
-    $query_videojuego = "INSERT INTO videojuegos (nombre, precio, stock, id_plataforma, id_imagenes ,id_genero) 
-                         VALUES ('$nombre', '$precio', '$stock', '$id_plataforma', '$id_imagenes','$id_genero')";
+    $query_videojuego = "INSERT INTO videojuegos (nombre, precio, tipo_de_vino, id_proveedor, id_imagenes ,id_bodega) 
+                         VALUES ('$nombre', '$precio', '$tipo_de_vino', '$id_proveedor', '$id_imagenes','$id_bodega')";
     $result_videojuegos = mysqli_query($conn, $query_videojuego);
 
     if ($result_videojuegos) {

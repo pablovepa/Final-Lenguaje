@@ -37,7 +37,7 @@ $tipo = $_SESSION['tipo'];
         <h4 class="text-center mb-4">Selecciona qué deseas gestionar</h4>
         <div class="d-grid gap-3">
           <a href="indexu.php" class="btn btn-primary btn-lg">Gestionar Usuarios</a>
-          <a href="games.php" class="btn btn-primary btn-lg">Gestionar Juegos</a>
+          <a href="games.php" class="btn btn-primary btn-lg">Gestionar Vino</a>
           <a href="index.php" class="btn btn-secondary btn-lg">Gestionar Tipos de Usuario</a>
           <a href="/final_lenguaje/gamepage/indexadm.php" class="btn btn-secondary btn-lg">Game Page</a>
         </div>

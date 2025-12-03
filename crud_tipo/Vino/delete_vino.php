@@ -1,20 +1,20 @@
-<?php include("includes/header_games.php")?>
+<?php include("includes/header_vino.php")?>
 <?php include("db.php")?>
 
     <div class ="card text-center">
         <div class="card-body">
-            <h1 class="card-title">Eliminar Juegos</h1>
-            <p class="card-text">Los siguientes juegos estan guardados hasta el momento:</p>
+            <h1 class="card-title">Eliminar Vinos</h1>
+            <p class="card-text">Los siguientes vinos estan guardados hasta el momento:</p>
          
             <div class="table-responsive-sm">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>id</th>
                             <th>Nombre</th>
                             <th>Precio</th>
-                            <th>Stock</th>
-                            <th>Plataforma</th>
+                            <th>Tipo_de_vino</th>
+                            <th>Proveedor</th>
+                            <th>Bodega</th>
                             <th>Genero</th>
                         </tr>
                     </thead>
@@ -30,17 +30,17 @@
 
                         while($row = mysqli_fetch_array($result_alumnos)){?>
                             <tr>
-                                <td><?php echo $row['id']?></td>
-                                <td><?php echo $row['nombre']?></td>
-                                <td><?php echo $row['precio']?></td>
-                                <td><?php echo $row['stock']?></td>
-                                <td><?php echo $row['plataforma']?></td>
-                                <td><?php echo $row['generos']?></td>                               
+                                <td><?php echo $row['Nombre']?></td>
+                                <td><?php echo $row['Precio']?></td>
+                                <td><?php echo $row['Tipo_de_vino']?></td>
+                                <td><?php echo $row['Proveedor']?></td>
+                                <td><?php echo $row['Bodega']?></td>
+                                <td><?php echo $row['Genero']?></td>                               
                                 <td>
-                                    <a href="deleteData_game.php?id=<?php echo $row['id']?>">
+                                    <a href="deleteData_vino.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                     </a>
-                                    <a href="updateData_game.php?id=<?php echo $row['id']?>">
+                                    <a href="updateData_vino.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
                                 </td>

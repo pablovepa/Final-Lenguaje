@@ -30,19 +30,19 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img_plus/hollow-knight3.webp">
+			<div class="hs-item set-bg" data-setbg="img_plus/malbectinto.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>Hollow knight <span></span></h2>
-						<p>Metroidvania <br>Una historia de silencio, redención y soledad, donde cada paso revela más del trágico pasado de Hallownest… y del verdadero propósito del Caballero. <br>Consiguelo aqui.</p>
+						<h2>Malbec Reserva <span></span></h2>
+						<p>Tinto <br>Vino de gran carácter, elaborado con uvas seleccionadas y criado en barricas de roble. Presenta un color rojo profundo con reflejos violáceos, aromas intensos a frutos rojos maduros, ciruelas y notas de vainilla y cacao. En boca es suave, equilibrado y con taninos redondos, ofreciendo un final persistente y elegante. Ideal para acompañar carnes rojas, pastas y quesos maduros.<br>Consiguelo aqui.</p>
 						
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="img_plus/GOD-OF-WAR-RAGNAROK.jpg">
+			<div class="hs-item set-bg" data-setbg="img_plus/chardonnayblanco.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>God of War Ragnarok<span></span></h2>
+						<h2>ChandoChardonnay Clásico<span></span></h2>
 						<p>Accion y Aventura<br>Entre la guerra inminente y los lazos familiares, padre e hijo deberán decidir si el destino puede cambiarse… o si están condenados a repetir la historia de los dioses.<br>Consiguelo aqui</p>
 						
 					</div>

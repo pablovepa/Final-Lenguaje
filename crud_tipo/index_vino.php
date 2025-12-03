@@ -8,7 +8,7 @@
     }
     ?>
 
-    <h2 class="text-center mb-4">Lista de videojuegos registrados</h2>
+    <h2 class="text-center mb-4">Lista de vinos registrados</h2>
 
     <div class="row">
         <?php

@@ -75,7 +75,7 @@ if (isset($_POST['update2'])){
             </div>
 
             <div class="form-group mb-3">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre_usuario">Nombre Usuario:</label>
                 <input type="text" name="nombre_usuario" class="form-control" value="<?php echo $nombre_usuario; ?>">
             </div>
 

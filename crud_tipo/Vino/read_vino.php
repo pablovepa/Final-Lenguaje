@@ -1,4 +1,4 @@
-<?php include("includes/header_games.php"); ?>
+<?php include("includes/header_vino.php"); ?>
 <?php include("db.php"); ?>
 
 <div class="card text-center">
@@ -15,7 +15,6 @@ if (isset($_GET['mensaje'])) {
     echo "<div class='alert alert-success text-center'>" . htmlspecialchars($_GET['mensaje']) . "</div>";
 }
 ?>
-
 <h2 class="text-center mb-4">Lista de Vinos</h2>
 
 <div class="row">

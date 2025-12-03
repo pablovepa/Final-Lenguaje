@@ -1,4 +1,4 @@
-<?php include("includes/header_games.php") ?>
+<?php include("includes/header_vino.php") ?>
 <?php include("db.php") ?>
 
 <?php
@@ -12,11 +12,12 @@ if (isset($_GET['id'])) {
         $row = mysqli_fetch_array($result);
         $nombre = $row['nombre'];
         $precio = $row['precio'];
-        $stock = $row['stock'];
-        $id_plataforma = $row['id_plataforma'];
+        $tipo_de_vino = $row['tipo_de_vino'];
+        $id_proveedor = $row['id_proveedor'];
+        $id_bodega = $row['id_bodega'];
         $id_imagenes = $row['id_imagenes'];
         $nombre_imagen = $row['nombre_imagen'];
-        $id_genero = $row['id_genero'];
+       
     }
 }
 
@@ -24,8 +25,9 @@ if (isset($_POST['update2'])) {
     $codigo = $_GET['id'];
     $nombre = $_POST['nombre'];
     $precio = $_POST['precio'];
-    $stock = $_POST['stock'];
-    $id_plataforma = $_POST['id_plataforma'];
+    $tipo_de_vino = $_POST['tipo_de_vino'];
+    $id_proveedor = $_POST['id_proveedor'];
+    $id_bodega = $_POST['id_bodega'];
     $id_imagenes = $_POST['id_imagenes_actual'];
     $id_genero = $_POST['id_genero'];
 
@@ -67,7 +69,7 @@ if (isset($_POST['update2'])) {
         <h1 class="card-title">ACTUALIZAR DATOS</h1>
         <p class="card-text">Los siguientes son los datos seleccionados para actualizar:</p>
 
-        <form action="updateData_game.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data" style="max-width: 500px; margin: 0 auto; text-align: left;">
+        <form action="updateData_vino.php?id=<?php echo $_GET['id']; ?>" method="POST" enctype="multipart/form-data" style="max-width: 500px; margin: 0 auto; text-align: left;">
             <div class="form-group mb-3">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" class="form-control" value="<?php echo $nombre; ?>">
@@ -79,8 +81,8 @@ if (isset($_POST['update2'])) {
             </div>
 
             <div class="form-group mb-4">
-                <label for="stock">Stock:</label>
-                <input type="text" name="stock" class="form-control" value="<?php echo $stock; ?>">
+                <label for="tipo_de_vino">Tipo de Vino:</label>
+                <input type="text" name="tipo_de_vino" class="form-control" value="<?php echo $tipo_de_vino; ?>">
             </div>
 
             <?php if (!empty($nombre_imagen)): ?>
@@ -97,8 +99,8 @@ if (isset($_POST['update2'])) {
             </div>
 
             <div class="form-group mb-4">
-                <label for="plataforma">Seleccione la plataforma:</label>
-                <select name="id_plataforma" id="id_plataforma" class="form-control" required>
+                <label for="proveedor">Seleccione el proveedor:</label>
+                <select name="id_proveedor" id="id_proveedor" class="form-control" required>
                     <option value="">-- Seleccione un tipo --</option>
                     <?php
                     $query_tipos = "SELECT id_plataforma, nombreplataforma FROM plataforma";
@@ -117,8 +119,8 @@ if (isset($_POST['update2'])) {
             </div>
             
             <div class="form-group mb-4">
-                <label for="genero">Seleccione el Genero:</label>
-                <select name="id_genero" id="id_genero" class="form-control" required>
+                <label for="bodega">Seleccione la bodega:</label>
+                <select name="id_bodega" id="id_bodega" class="form-control" required>
                     <option value="">-- Seleccione un tipo --</option>
                     <?php
                     $query_tipos = "SELECT id_genero, nombre_genero FROM generos";

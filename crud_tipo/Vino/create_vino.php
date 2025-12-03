@@ -1,4 +1,4 @@
-<?php include("includes/header_games.php"); ?>
+<?php include("includes/header_vino.php"); ?>
 <?php include("db.php"); ?>
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">

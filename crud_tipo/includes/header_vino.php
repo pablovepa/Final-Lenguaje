@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gestion de Juegos</title>
+    <title>Gestion de Vinos</title>
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -23,16 +23,16 @@
         <a class="nav-link" href="games.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="create_game.php">Crear</a>
+        <a class="nav-link" href="create_vino.php">Crear</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="read_game.php">Leer</a>
+          <a class="nav-link" href="read_vino.php">Leer</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="update_game.php">Actualizar</a>
+          <a class="nav-link" href="update_vino .php">Actualizar</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="delete_game.php">Eliminar</a>
+          <a class="nav-link" href="delete_vino.php">Eliminar</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" href="gestion.php">Gestion</a>

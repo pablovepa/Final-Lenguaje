@@ -69,7 +69,7 @@
 		<div class="container">
 			<ul class="footer-menu">
 				<li><a href="index.php">Inicio</a></li>
-				<li><a href="reviewu.php">Juegos</a></li>
+				<li><a href="reviewu.php">Vinos</a></li>
 				<li><a href="contact.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

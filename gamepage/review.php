@@ -65,7 +65,7 @@
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
-					<li><a href="review.php">Juegos</a></li>
+					<li><a href="review.php">Vinos</a></li>
 					<li><a href="contact.html">Contacto</a></li>
 				</ul>
 			</nav>
@@ -108,7 +108,7 @@
 		<div class="container">
 			<ul class="footer-menu">
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="review.php">Juegos</a></li>
+				<li><a href="review.php">Vinos</a></li>
 				<li><a href="contact.html">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

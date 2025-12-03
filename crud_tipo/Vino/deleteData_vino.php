@@ -3,7 +3,7 @@
 <?php
 if(isset($_GET['id'])){
         $codigo = $_GET['id'];
-        $query = "DELETE FROM videojuegos WHERE id = $codigo";
+        $query = "DELETE FROM vino WHERE id = $codigo";
         $result = mysqli_query($conn, $query);
         if(!$result)
         {

@@ -17,7 +17,7 @@
  
  
  <section class="container my-5">
-        <h2 class="text-center mb-4">Videojuegos Disponibles</h2>
+        <h2 class="text-center mb-4">Vinos Disponibles</h2>
         <div class="row justify-content-center">
             <?php
             $query = "SELECT v.nombre, v.precio, v.stock, p.nombreplataforma, i.imagen , g.nombre_genero
