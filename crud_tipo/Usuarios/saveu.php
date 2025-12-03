@@ -1,5 +1,5 @@
 <?php
-include("db.php");
+include __DIR__ . '/../db.php';
 
 if (isset($_POST['guardar_registro'])) {
     // Capturamos los datos del formulario

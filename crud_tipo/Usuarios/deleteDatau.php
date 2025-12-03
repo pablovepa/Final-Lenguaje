@@ -1,4 +1,5 @@
-<?php include("db.php")?>
+
+<?php include __DIR__ . '/../db.php'; ?>
 
 <?php
 if(isset($_GET['id'])){
