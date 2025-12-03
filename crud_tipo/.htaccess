@@ -1,0 +1,2 @@
+# Redirigir automáticamente al login.php
+DirectoryIndex login.php
