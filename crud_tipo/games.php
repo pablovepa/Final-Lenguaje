@@ -18,7 +18,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Añadir vino</h5>
-                                    <a href="create_vino.php" class="btn btn-primary">Crear</a>
+                                    <a href="vino/create_vino.php" class="btn btn-primary">Crear</a>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Ver vinos</h5>
-                                    <a href="read_vino.php" class="btn btn-primary">Leer</a>
+                                    <a href="vino/read_vino.php" class="btn btn-primary">Leer</a>
                                 </div>
                             </div>
 
@@ -37,7 +37,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Actualizar vino</h5>
-                                    <a href="update_vino.php" class="btn btn-primary">Actualizar</a>
+                                    <a href="vino/update_vino.php" class="btn btn-primary">Actualizar</a>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Eliminar vino</h5>
-                                    <a href="delete_vino.php" class="btn btn-primary">Borrar</a>
+                                    <a href="vino/delete_vino.php" class="btn btn-primary">Borrar</a>
                                 </div>
                             </div>
                         </div>
