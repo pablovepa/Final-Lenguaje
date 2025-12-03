@@ -1,5 +1,5 @@
-<?php include("includes/headeru.php")?>
-<?php include("db.php")?>
+<?php include __DIR__ . '/../includes/headeru.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <?php
 if(isset($_GET['id'])){
@@ -37,7 +37,7 @@ if (isset($_POST['update2'])){
         ?>
         <script>alert("Registro actualizado");</script>
         <script>
-        window.location = "indexu.php";
+        window.location = "updateu.php";
         </script>
         <?php 
     }
@@ -94,4 +94,4 @@ if (isset($_POST['update2'])){
 </div>
    
 
-<?php include("includes/footer.php")?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

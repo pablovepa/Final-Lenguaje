@@ -35,7 +35,7 @@
             <hr>
             <input type="text" name="email"  placeholder="Ingrese Correo" autofocus>
             <hr>
-            <input type="number" name="telefono"  placeholder="Ingrese nro de Telefono" autofocus>
+            <input type="text" name="telefono"  placeholder="Ingrese nro de Telefono" autofocus>
             </div> 
             <div class="form-group">
             <input type="submit" class="btn btn-success" name="guardar_registro" value="Guardar"> </div>
