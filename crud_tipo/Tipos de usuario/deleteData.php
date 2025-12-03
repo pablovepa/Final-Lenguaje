@@ -1,4 +1,5 @@
-<?php include("db.php")?>
+
+<?php include __DIR__ . '/../db.php'; ?>
 
 <?php
 if(isset($_GET['id'])){
@@ -17,5 +18,5 @@ if(isset($_GET['id'])){
     }
     //si quisiera redireccionar a index directamente: ?>
     <script>
-    window.location = "index.php";
+    window.location = "../index.php";
     </script>
