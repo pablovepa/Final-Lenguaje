@@ -1,5 +1,6 @@
-<?php include("includes/headeru.php")?>
-<?php include("db.php")?>
+<?php include __DIR__ . '/../includes/headeru.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
+
 
     <div class ="card text-center">
         <div class="card-body">
@@ -55,4 +56,5 @@
         </div>
     </div> 
 
-<?php include("includes/footer.php")?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
+

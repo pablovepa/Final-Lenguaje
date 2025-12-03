@@ -4,7 +4,7 @@
 $mysql_host = "localhost"; 
 $mysql_user = "root"; 
 $mysql_pass = ""; 
-$mysql_dbname = "ucc_sistema"; 
+$mysql_dbname = "ucc_sistemas"; 
 
 /* 
 la variable "conn" se suele nomenclar en Php: $conn. 
