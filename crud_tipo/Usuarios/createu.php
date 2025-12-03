@@ -1,9 +1,9 @@
-<?php include("includes/headeru.php")?>
-<?php include("db.php")?>
+<?php include __DIR__ . '/../includes/headeru.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <div class ="card text-center">
     <div class="card-body">
-        <h1 class="card-title">CREAR REGISTRO</h1>
+        <h1 class="card-title">CREAR USUARIO</h1>
         <p class="card-text">Ingrese los datos a continuación</p>
 
         <form action="saveu.php" method="POST">
@@ -44,4 +44,4 @@
     </div>
 </div>
 
-<?php include("includes/footer.php")?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
