@@ -10,6 +10,7 @@
             <form action="save_vino.php" method="POST">
                 <div class="form-group text-start">
 
+                
                     <input type="text" name="nombrevino" class="form-control mb-3"
                         placeholder="Nombre del vino" required>
 

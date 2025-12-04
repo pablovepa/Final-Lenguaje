@@ -39,10 +39,10 @@
                                 <td><?php echo $row['proveedor']?></td>
                                 <td><?php echo $row['bodega']?></td>
                                 <td>
-                                    <a href="updateData_vino.php?id=<?php echo $row['id']?>">
+                                    <a href="vino/updateData_vino.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
-                                    <a href="deleteData_vino.php?id=<?php echo $row['id']?>">
+                                    <a href="vino/deleteData_vino.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                     </a>
                                 </td>
