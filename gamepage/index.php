@@ -37,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="img_plus/chardonnayblanco.jpg">
+			<div class="hs-item set-bg" data-setbg="img_plus/chardonneyblanco.jpg">
 				<div class="hs-text">
 					<div class="container">
 						<h2>Chardonnay Clásico<span></span></h2>
@@ -55,9 +55,9 @@
 		<div class="ln-title">Nuestra seleccion</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Nuevos</span>Explora los nuevos lanzamientos.</div>
-				<div class="nt-item"><span class="strategy">Estrategia</span>Pon a prueba tu mente para desafiar a tus enemigos.</div>
-				<div class="nt-item"><span class="racing">Aventura</span>Se parte de una travesia unica</div>
+				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
+				<div class="nt-item"><span class="strategy">Dulces</span>Vinos elaborados con uvas muy maduras que conservan un alto contenido de azúcar. Son suaves, aromáticos y de sabor intenso.</div>
+				<div class="nt-item"><span class="racing">Rosados</span>Vinos frescos y suaves obtenidos de uvas tintas con breve contacto con las pieles. Combinan la ligereza de los blancos con un toque frutado de los tintos.</div>
 			</div>
 		</div>
 	</div>
@@ -69,41 +69,41 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img_plus/silksong.jpg">
+					<div class="feature-item set-bg" data-setbg="img_plus/lp32.jpg">
 						<span class="cata new">Nuevo</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Silksong</a></h5>
-							<p>Una historia sobre sacrificio, deber y redención, donde la seda teje tanto el destino… como la prisión de quienes la sirven.</p>
+							<h5><a href="#">Mi Victoria LP32</a></h5>
+							<p>Vino creado por Leandro Paredes, inspirado en su trayectoria y en el número que lo acompaña. Presenta un perfil elegante y moderno, con notas frutadas y buena estructura, pensado para celebraciones y momentos especiales.</p>
 							<a href="#" class="fi-comment"></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img_plus/age.jpg">
-						<span class="cata strategy">Estrategia</span>
+					<div class="feature-item set-bg" data-setbg="img_plus/cosechatardia.jpg">
+						<span class="cata strategy">Dulce</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Age of Empire II</a></h5>
-							<p>Una experiencia clásica donde cada partida es una lección de ingenio, expansión y gloria medieval.</p>
+							<h5><a href="#">Cosecha Tardía</a></h5>
+							<p>Vino dulce elaborado con uvas cosechadas en su punto máximo de madurez. De aromas intensos a frutas tropicales y miel, es suave, fresco y muy agradable en boca. Ideal para acompañar postres o disfrutar solo como vino de sobremesa.</p>
 							<a href="#" class="fi-comment"></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img_plus/ghost-of-yotei.jpg">
+					<div class="feature-item set-bg" data-setbg="img_plus/espumantebrut.jpg">
 						<span class="cata new">Nuevo</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Ghost of Yotei</a></h5>
-							<p>Una historia de venganza, honor y redención, donde la línea entre el fantasma y la leyenda se vuelve cada vez más difusa.</p>
+							<h5><a href="#">Espumante Brut </a></h5>
+							<p>Vino espumante de burbuja fina y fresca, con notas frutadas y una acidez equilibrada. Seco y elegante, es ideal para brindis, aperitivos y acompañar comidas ligeras.</p>
 							<a href="#" class="fi-comment"></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 p-0">
-					<div class="feature-item set-bg" data-setbg="img_plus/GOWR.jpg">
-						<span class="cata racing">Aventura</span>
+					<div class="feature-item set-bg" data-setbg="img_plus/rose.jpg">
+						<span class="cata racing">Rosado</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">God of War Ragnarok</a></h5>
-							<p>Entre la guerra inminente y los lazos familiares, padre e hijo deberán decidir si el destino puede cambiarse… o si están condenados a repetir la historia de los dioses.</p>
+							<h5><a href="#">Rose</a></h5>
+							<p>Vino fresco y liviano, con aromas a frutas rojas y flores. Suave y equilibrado, ofrece un sabor delicado y refrescante. Ideal para días cálidos y comidas ligeras.</p>
 							<a href="#" class="fi-comment"></a>
 						</div>
 					</div>
@@ -115,7 +115,7 @@
 
 
 	<!-- Recent game section  -->
-	<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
+	<section class="recent-game-section spad set-bg" data-setbg="img/uvas.jpg">
 		<div class="container">
 			<div class="section-title">
 				<div class="cata new">Otros Exitos</div>
@@ -124,12 +124,12 @@
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img_plus/MortalKombat.webp">
-							<div class="cata new">Mortal Kombat I</div>
+						<div class="rgi-thumb set-bg" data-setbg="img_plus/granalturamalbec.jpg">
+							<div class="cata new">Gran Altura Malbec</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Se parte de un torneo mortal</h5>
-							<p>Reinventa la saga con un universo alterno, combates brutales y un sistema de Kameo Fighters, combinando tradición y renovación en la lucha definitiva entre el destino y la sangre.</p>
+							<h5>Descubrí la intensidad de los Andes</h5>
+							<p>Vino tinto elaborado con uvas de altura, que ofrece aromas a ciruelas, moras y un toque de cacao. En boca es equilibrado, con taninos suaves y un final prolongado. Ideal para carnes rojas y quesos intensos.</p>
 							<a href="#" class="comment"></a>
 							
 						</div>
@@ -137,12 +137,12 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img/recent-game/2.jpg">
-							<div class="cata racing">Doom</div>
+						<div class="rgi-thumb set-bg" data-setbg="img_plus/brumadelosvalles.jpg">
+							<div class="cata racing">Bruma de los Valles</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Arraza con las hordas del infierno</h5>
-							<p>Prueba una jugabilidad frenética, combates viscerales y una historia minimalista que celebra la pura esencia del caos, la venganza y la destrucción demoníaca. </p>
+							<h5>Elegancia y frescura en cada burbuja</h5>
+							<p>Espumante de burbuja fina, con notas cítricas y frutales. Su sabor es seco, refrescante y perfecto para celebraciones, aperitivos o comidas ligeras. Una opción moderna y versátil.</p>
 							<a href="#" class="comment"></a>
 							
 						</div>
@@ -150,12 +150,12 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
-						<div class="rgi-thumb set-bg" data-setbg="img_plus/horizon.webp">
-							<div class="cata adventure">Horizon Zero Dawn</div>
+						<div class="rgi-thumb set-bg" data-setbg="img_plus/rosaserena.jpg">
+							<div class="cata adventure">Rosé Serena</div>
 						</div>
 						<div class="rgi-content">
-							<h5>Explora las ruinas de un mundo destruido</h5>
-							<p>Una historia épica sobre identidad, conocimiento y supervivencia, en un mundo tan hermoso como peligroso.</p>
+							<h5>Ligero, frutado y perfecto para cualquier momento</h5>
+							<p>Vino rosado de tono suave, con aromas a frutillas y flores blancas. En boca es fresco y equilibrado, ideal para tardes cálidas, ensaladas, sushi o pastas livianas.</p>
 							<a href="#" class="comment"></a>
 							
 						</div>
@@ -165,7 +165,7 @@
 		</div>
 	</section>
 	<!-- Review section -->
-	<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
+	<section class="review-section spad set-bg" data-setbg="img/parral.jpg">
 		<div class="container">
 			<div class="section-title">
 				<div class="cata new">new</div>
@@ -174,45 +174,45 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img/review/1.jpg">
-							<div class="score yellow">9.3</div>
+						<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
+							<div class="score yellow">9.4</div>
 						</div>
 						<div class="review-text">
-							<h5>Assasin’’s Creed Origins</h5>
-							<p>Una aventura que combina acción, sigilo y exploración, mostrando los orígenes de la lucha entre Asesinos y Templarios en un Egipto lleno de misterio y poder.</p>
+							<h5>Gran Altura Malbec</h5>
+							<p>Vino tinto de carácter intenso, con notas a ciruelas, moras y un toque de cacao. Taninos suaves y final prolongado, ideal para carnes y quesos.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/doom2.webp">
-							<div class="score purple">9.5</div>
+						<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
+							<div class="score purple">9.6</div>
 						</div>
 						<div class="review-text">
-							<h5>Doom</h5>
-							<p>Prueba una jugabilidad frenética, combates viscerales y una historia minimalista que celebra la pura esencia del caos, la venganza y la destrucción demoníaca.</p>
+							<h5>Espumante Extra Brut Bruma</h5>
+							<p>Espumante fresco y elegante, con burbuja fina y aromas cítricos. Seco, equilibrado y perfecto para celebraciones o aperitivos.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/EldenRing.webp">
+						<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
 							<div class="score green">9.8</div>
 						</div>
 						<div class="review-text">
-							<h5>Elden Ring</h5>
-							<p>Combina exploración libre, narrativa ambiental y dificultad épica, ofreciendo una experiencia de fantasía oscura donde cada elección y batalla puede cambiar el destino de las Tierras Intermedias.</p>
+							<h5>Cosecha Tardía Dulce</h5>
+							<p>Dulce natural, suave y aromático, con notas a miel, durazno y flores blancas. Ideal para postres y tardes relajadas.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/TW3.jpeg">
+						<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
 							<div class="score pink">9.7</div>
 						</div>
 						<div class="review-text">
-							<h5>The Witcher 3: Wild Hunt</h5>
-							<p>Una historia épica de venganza, destino y supervivencia, donde tus elecciones afectan directamente el mundo que te rodea, en un universo rico en personajes memorables y narrativa profunda.</p>
+							<h5>Rosé Rosa Serena</h5>
+							<p>Rosado liviano y frutado, con aromas a frutilla y cereza. Fresco y suave, perfecto para comidas ligeras o disfrutar al aire libre.</p>
 						</div>
 					</div>
 				</div>
