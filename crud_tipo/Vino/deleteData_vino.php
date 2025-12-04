@@ -1,9 +1,9 @@
-<?php include("db.php")?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <?php
 if(isset($_GET['id'])){
         $codigo = $_GET['id'];
-        $query = "DELETE FROM vino WHERE id = $codigo";
+        $query = "DELETE FROM vinos WHERE id_vinos = $codigo";
         $result = mysqli_query($conn, $query);
         if(!$result)
         {

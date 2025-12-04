@@ -11,35 +11,47 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Precio</th>
-                            <th>Tipo_de_vino</th>
-                            <th>Proveedor</th>
+                            <th>Stock</th>
+                            <th>Tipo</th>
                             <th>Bodega</th>
-                            <th>Genero</th>
+                            <th>Proveedor</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        $query = "SELECT v.id, v.nombre, v.precio, v.stock, p.nombreplataforma AS plataforma , g.nombre_genero AS generos
-                              FROM videojuegos v
-                              LEFT JOIN plataforma p ON v.id_plataforma = p.id_plataforma
-                              LEFT JOIN generos g ON v.id_genero = g.id_genero
-                              ORDER BY v.nombre ASC;";
+                        $query = " SELECT 
+                                        v.id_vinos,
+                                        v.nombrevino,
+                                        v.precio,
+                                        v.stock,
+                                        t.nombre    AS tipo,
+                                        b.nombre_bodega  AS bodega,
+                                        p.nombre AS proveedor
+                                    FROM vinos v
+                                    LEFT JOIN tipos t 
+                                        ON v.id_tipos = t.id_tipos
+                                    LEFT JOIN bodegas b 
+                                        ON v.id_bodegas = b.id_bodegas
+                                    LEFT JOIN proveedores p 
+                                        ON v.id_proveedores = p.id_proveedores
+                                        ORDER BY v.nombrevino ASC
+                                    ";
 
-                        $result_alumnos = mysqli_query($conn, $query);
+                               $result_alumnos = mysqli_query($conn, $query);
 
                         while($row = mysqli_fetch_array($result_alumnos)){?>
                             <tr>
-                                <td><?php echo $row['Nombre']?></td>
-                                <td><?php echo $row['Precio']?></td>
-                                <td><?php echo $row['Tipo_de_vino']?></td>
-                                <td><?php echo $row['Proveedor']?></td>
-                                <td><?php echo $row['Bodega']?></td>
-                                <td><?php echo $row['Genero']?></td>                               
+                                <td><?= $row['nombrevino'] ?></td>
+                                <td>$<?= $row['precio'] ?></td>
+                                <td><?= $row['stock'] ?></td>
+                                <td><?= $row['tipo'] ?></td>
+                                <td><?= $row['proveedor'] ?></td>
+                                <td><?= $row['bodega'] ?></td>                               
                                 <td>
-                                    <a href="deleteData_vino.php?id=<?php echo $row['id']?>">
+                                    <a href="deleteData_vino.php?id=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                     </a>
-                                    <a href="updateData_vino.php?id=<?php echo $row['id']?>">
+                                    <a href="updateData_vino.php?id=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
                                 </td>

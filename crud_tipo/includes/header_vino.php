@@ -12,15 +12,15 @@
 <body>
 <!-- Bootstrap nav -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index_vino.php">Gestion de Vinoteca</a>
+  <a class="navbar-brand" href="indexvinos.php">Gestion de Vinoteca</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
+s
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="games.php">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="indexvinos.php">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="../vino/create_vino.php">Crear</a>
@@ -35,13 +35,11 @@
           <a class="nav-link" href="../vino/delete_vino.php">Eliminar</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="gestion.php">Gestion</a>
+          <a class="nav-link" href="../gestion.php">Gestion</a>
       </li>
+    
       <li class="nav-item">
-          <a class="nav-link" href="/final_lenguaje/gamepage/indexadm.php">Game Page</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="logout.php">Cerrar Sesión</a>
+          <a class="nav-link" href="../logout.php">Cerrar Sesión</a>
     </ul>                 
   </div>
 </nav>
