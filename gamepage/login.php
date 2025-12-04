@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'db.php';
+include __DIR__ . '/../crud_tipo/db.php';
 
 $error = '';
 $valor_usuario = '';

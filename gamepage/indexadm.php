@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Vinoteca La Vid Dorada</title>
+	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Vinoteca La Vid Dorada">
+	<meta name="description" content="Vinoteca G1">
 	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
@@ -58,9 +58,9 @@
 		<div class="ln-title">Nuestra seleccion</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Nuevos</span>Explora los nuevos lanzamientos.</div>
-				<div class="nt-item"><span class="strategy">Estrategia</span>Pon a prueba tu mente para desafiar a tus enemigos.</div>
-				<div class="nt-item"><span class="racing">Aventura</span>Se parte de una travesia unica</div>
+				<div class="nt-item"><span class="new">Nuevos</span>Explora los mas recientes vinos agregados a nuestra cava.</div>
+				<div class="nt-item"><span class="strategy">Existentes</span>Sigue deleitandote con nuestra seleccion actual.</div>
+				<div class="nt-item"><span class="racing">Proximamente</span>Se parte de una nueva seleccion de Vinos</div>
 			</div>
 		</div>
 	</div>
@@ -75,8 +75,10 @@
 					<div class="feature-item set-bg" data-setbg="img_plus/silksong.jpg">
 						<span class="cata new">Nuevo</span>
 						<div class="fi-content text-white">
-							<h5><a href="#">Silksong</a></h5>
-							<p>Una historia sobre sacrificio, deber y redención, donde la seda teje tanto el destino… como la prisión de quienes la sirven.</p>
+							<h5><a href="#">Vino Trumpeter Cabernet Sauvignon</a></h5>
+							<p>El Vino Trumpeter Cabernet Sauvignon es una elección ideal para aquellos que buscan un vino de calidad excepcional. 
+								Con su sabor robusto y aromas intensos, este vino se convierte en el compañero perfecto para cualquier ocasión.
+								</p>
 							<a href="#" class="fi-comment"></a>
 						</div>
 					</div>
