@@ -1,5 +1,5 @@
-<?php include("includes/header_vino.php") ?>
-<?php include("db.php") ?>
+<?php include __DIR__ . '/../includes/header_vino.php'; ?>
+<?php include __DIR__ . '/../db.php'; ?>
 
 <?php
 if (isset($_GET['id'])) {
@@ -143,5 +143,5 @@ if (isset($_POST['update2'])) {
     </div>
 </div>
 
-<?php include("includes/footer.php") ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 
