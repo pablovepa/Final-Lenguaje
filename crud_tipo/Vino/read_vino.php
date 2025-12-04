@@ -15,11 +15,14 @@ if (isset($_GET['mensaje'])) {
     echo "<div class='alert alert-success text-center'>" . htmlspecialchars($_GET['mensaje']) . "</div>";
 }
 ?>
+
 <h2 class="text-center mb-4">Lista de Vinos</h2>
 
 <div class="row">
+
 <?php
-$query = "SELECT 
+$query = "
+SELECT 
     v.nombrevino,
     v.precio,
     v.stock,
@@ -27,9 +30,10 @@ $query = "SELECT
     b.nombre_bodega,
     p.nombre AS proveedor
 FROM vinos v
-JOIN tipos t ON v.id_tipos = t.id_tipos
-JOIN bodegas b ON v.id_bodegas = b.id_bodegas
-JOIN proveedores p ON v.id_proveedores = p.id_proveedores;
+LEFT JOIN tipos t ON v.id_tipos = t.id_tipos
+LEFT JOIN bodegas b ON v.id_bodegas = b.id_bodegas
+LEFT JOIN proveedores p ON v.id_proveedores = p.id_proveedores
+ORDER BY v.nombrevino ASC
 ";
 
 $result = mysqli_query($conn, $query);
@@ -39,13 +43,13 @@ if ($result && mysqli_num_rows($result) > 0) {
         echo "<div class='col-md-4 mb-4'>";
         echo "<div class='card shadow'>";
         echo "<div class='card-body'>";
-        echo "<h5 class='card-title'>{$row['nombrevino']}</h5>";
+        echo "<h5 class='card-title'>" . htmlspecialchars($row['nombrevino']) . "</h5>";
         echo "<p class='card-text'>
-                <strong>Tipo:</strong> {$row['tipo']}<br>
-                <strong>Bodega:</strong> {$row['nombre_bodega']}<br>
-                <strong>Proveedor:</strong> {$row['proveedor']}<br>
-                <strong>Precio:</strong> ${$row['precio']}<br>
-                <strong>Stock:</strong> {$row['stock']}
+                <strong>Tipo:</strong> " . htmlspecialchars($row['tipo'] ?? 'Sin tipo') . "<br>
+                <strong>Bodega:</strong> " . htmlspecialchars($row['nombre_bodega'] ?? 'Sin bodega') . "<br>
+                <strong>Proveedor:</strong> " . htmlspecialchars($row['proveedor'] ?? 'Sin proveedor') . "<br>
+                <strong>Precio:</strong> $" . number_format($row['precio'], 2) . "<br>
+                <strong>Stock:</strong> " . htmlspecialchars($row['stock']) . "
               </p>";
         echo "</div>";
         echo "</div>";
@@ -55,6 +59,8 @@ if ($result && mysqli_num_rows($result) > 0) {
     echo "<p class='text-center'>No hay vinos registrados.</p>";
 }
 ?>
+
+</div>
 </div>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
