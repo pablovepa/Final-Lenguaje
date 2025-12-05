@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Redirigir después de unos segundos
             echo "<script>
                     setTimeout(function() {
-                        window.location.href = 'indexadm.php'; // página principal de la vinoteca
+                        window.location.href = 'index_cli.php'; // página principal de la vinoteca
                     }, 4000);
                   </script>";
 

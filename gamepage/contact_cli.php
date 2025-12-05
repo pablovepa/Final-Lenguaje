@@ -117,7 +117,7 @@
 		<div class="container">
 			<ul class="footer-menu">
 				<li><a href="index_cli.php">Inicio</a></li>
-				<li><a href="review_cli.php">Juegos</a></li>
+				<li><a href="review_cli.php">Vinos</a></li>
 				<li><a href="contact_cli.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

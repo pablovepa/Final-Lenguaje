@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($fila && ($password === $fila['password'] || password_verify($password, $fila['password']))) {
             $_SESSION['usuario'] = $fila['usuario'];
             $_SESSION['tipo'] = $fila['tipo_usuario'];
-            header("Location: index.php");
+            header("Location: index_cli.php");
             if ($fila['tipo_usuario'] == 1) {
                 header("Location: index_cli.php");
                 exit();
@@ -91,14 +91,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="alert alert-danger text-center"><?php echo $error; ?></div>
     <?php endif; ?>
 
-    <form method="post" action="login.php">
+    <form method="post" action="login_cli.php">
         <input type="text" name="usuario" class="form-control" placeholder="Nombre de usuario" value="<?php echo $valor_usuario; ?>" required>
         <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
         <button class="site-btn" type="submit">Iniciar</button>
     </form>
 
     <div class="mt-3">
-        <a href="registro.php" class="site-btn">Registrarse</a>
+        <a href="registro_cli.php" class="site-btn">Registrarse</a>
     </div>
     <div class="mt-3">
         <a href="index_vis.php" class="site-btn">Volver</a>

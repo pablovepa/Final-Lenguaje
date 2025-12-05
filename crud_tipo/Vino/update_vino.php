@@ -6,9 +6,7 @@
         <h1 class="card-title">Actualizar datos de Vinos</h1>
         <p class="card-text">Datos de vinos guardados</p>
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-            <a href="create_vino.php" class="btn btn-primary">Agregar</a>
-        </div>
+     
 
         <div class="table-responsive-sm">
             <table class="table table-bordered">
@@ -55,9 +53,7 @@
                               <a href="updateData_vino.php?id_vinos=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
-                                    <a href="deleteData_vino.php?id_vinos=<?php echo $row['id_vinos']?>">
-                                    <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </a>
+                                 
                         </td>
                     </tr>
                         <?php } ?>

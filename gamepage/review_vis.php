@@ -52,10 +52,10 @@
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="user-panel">
-				<a href="login.php">Iniciar Sesion</a>
+				<a href="login_cli.php">Iniciar Sesion</a>
 			</div>
 			<div class="user-panel">
-				<a href="registro.php">Registrarse</a>
+				<a href="registro_cli.php">Registrarse</a>
 			</div>
 			<div class="user-panel">
 				<a href="login_adm.php">Administrador</a>

@@ -22,7 +22,7 @@ if (isset($_POST['guardar_registro'])) {
     if (!$result) {
         die("Fallo en el query: " . mysqli_error($conn));
     } else {
-        echo "<script>alert('Registro exitoso. Ya puedes iniciar sesión.'); window.location='login.php';</script>";
+        echo "<script>alert('Registro exitoso. Ya puedes iniciar sesión.'); window.location='login_cli.php';</script>";
     }
 }
 ?>

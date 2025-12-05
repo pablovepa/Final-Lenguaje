@@ -44,3 +44,5 @@ $tipo = $_SESSION['tipo'];
         </nav>
     </div>
 </header>
+
+

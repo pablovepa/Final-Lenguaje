@@ -44,6 +44,11 @@ if ($resultado->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
     <style>
         body {
             background: url('img/fondo-compra.jpg') no-repeat center center fixed;
@@ -69,7 +74,12 @@ if ($resultado->num_rows > 0) {
     </style>
 </head>
 <body>
-    <?php include 'header.php'; ?>
+    <?php include 'header_cli.php'; ?>
+
+
+    
+
+
     <div class="contenedor">
         <h1>Compra de <?php echo htmlspecialchars($vino['nombrevino']); ?></h1>
 
