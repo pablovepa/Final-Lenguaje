@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Game Warrior</title>
+	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Game Warrior Template">
 	<meta name="keywords" content="warrior, game, creative, html">
@@ -32,14 +32,17 @@
 	<header class="header-section">
 		<div class="container">
 			<!-- logo -->
-			<a class="site-logo" href="index.html">
+			<a class="site-logo" href="index_vis.php">
 				<img src="img/logo.png" alt="">
 			</a>
 			<div class="user-panel">
-				<a href="login.php">Iniciar con cuenta</a>
+				<a href="login.php">Iniciar Sesion</a>
 			</div>
 			<div class="user-panel">
-				<a href="registro.php">Registarse</a>
+				<a href="registro.php">Registrarse</a>
+			</div>
+			<div class="user-panel">
+				<a href="login_adm.php">Administrador</a>
 			</div>
 			<!-- responsive -->
 			<div class="nav-switch">
@@ -48,9 +51,9 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="review.php">Vinos</a></li>
-					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="index_vis.php">Inicio</a></li>
+					<li><a href="review_vis.php">Vinos</a></li>
+					<li><a href="contact_vis.php">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -63,16 +66,16 @@
 		<div class="ln-title">Informacion</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Nuevos</span>Explora los nuevos lanzamientos.</div>
-				<div class="nt-item"><span class="strategy">Estrategia</span>Pon a prueba tu mente para desafiar a tus enemigos.</div>
-				<div class="nt-item"><span class="racing">Aventura</span>Se parte de una travesia unica.</div>
+				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
+				<div class="nt-item"><span class="strategy">Dulces</span>Vinos elaborados con uvas muy maduras que conservan un alto contenido de azúcar. Son suaves, aromáticos y de sabor intenso.</div>
+				<div class="nt-item"><span class="racing">Rosados</span>Vinos frescos y suaves obtenidos de uvas tintas con breve contacto con las pieles. Combinan la ligereza de los blancos con un toque frutado de los tintos.</div>
 			</div>
 		</div>
 	</div>
 	<!-- Latest news section end -->
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img/page-top-bg/bodega.jpg">
+	<section class="page-info-section set-bg" data-setbg="img_plus/finca.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">
@@ -140,9 +143,9 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="review.php">Vinos</a></li>
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="index_vis.php">Inicio</a></li>
+				<li><a href="review_vis.php">Vinos</a></li>
+				<li><a href="contact_vis.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>

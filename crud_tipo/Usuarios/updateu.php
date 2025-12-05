@@ -49,9 +49,7 @@
                                     <a href="updateDatau.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
-                                    <a href="deleteDatau.php?id=<?php echo $row['id']?>">
-                                    <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </a>
+                                   
                                 </td>
                             </tr>
                         <?php } ?>

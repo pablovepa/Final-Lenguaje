@@ -23,7 +23,7 @@
 
 
 	<!-- Header section -->
-	<?php include 'headeradm.php'; ?>
+	<?php include 'header_cli.php'; ?>
 	<!-- Header section end -->
 
 
@@ -226,9 +226,9 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="indexadm.php">Inicio</a></li>
-				<li><a href="reviewadm.php">Juegos</a></li>
-				<li><a href="contactadm.php">Contacto</a></li>
+				<li><a href="index_cli.php">Inicio</a></li>
+				<li><a href="review_cli.php">Vinos</a></li>
+				<li><a href="contact_cli.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>

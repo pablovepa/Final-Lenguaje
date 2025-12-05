@@ -12,8 +12,7 @@ if (!isset($_SESSION['usuario'])) {
         <div class="col-md-12">
             <div class ="card text-center">
                 <div class="card-body">
-                    <h1 class="card-title">Sistema CRUD Tipos Usuarios</h5>
-                    <p class="card-text">Un sistema CRUD permite ejecutar las operaciones básicas de trabajo en PHP y MySQL</p>
+                    <h1 class="card-title">Sistema Tipos de Usuarios</h5>
                     <p class="card-text">Seleccione la operación en el menú de navegación ó en las siguientes cards:</p>                    
                     <div class="row">
                         <div class="col-sm-6">

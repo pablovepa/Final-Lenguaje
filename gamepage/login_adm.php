@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION['tipo'] = $fila['tipo_usuario'];
             header("Location: index.php");
             if ($fila['tipo_usuario'] == 1) {
-                header("Location: index_cli.php");
+                header("Location: /Final-Lenguaje/Final-Lenguaje/crud_tipo/gestion.php");
                 exit();
             }
         } else {
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Iniciar Sesión</title>
+    <title>Iniciar Sesión como Administrador</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon.ico" rel="shortcut icon"/>
@@ -91,19 +91,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="alert alert-danger text-center"><?php echo $error; ?></div>
     <?php endif; ?>
 
-    <form method="post" action="login.php">
+    <form method="post" action="login_adm.php">
         <input type="text" name="usuario" class="form-control" placeholder="Nombre de usuario" value="<?php echo $valor_usuario; ?>" required>
         <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
         <button class="site-btn" type="submit">Iniciar</button>
+        <div class="mt-3">
+        <a href="index_vis.php" class="site-btn">Volver</a>
+    </div>
     </form>
 
-    <div class="mt-3">
-        <a href="registro.php" class="site-btn">Registrarse</a>
-    </div>
-    <div class="mt-3">
-        <a href="index_vis.php" class="site-btn">Volver</a>
-                </div>
-</div>
+    
+
+
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

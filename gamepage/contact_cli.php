@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Game Warrior</title>
+	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Game Warrior Template">
 	<meta name="keywords" content="warrior, game, creative, html">
@@ -30,7 +30,7 @@
 
 
 	<!-- Header section -->
-     <?php include 'headeradm.php'; ?>
+     <?php include 'header_cli.php'; ?>
 	<!-- Header section end -->
 
 
@@ -39,16 +39,16 @@
 		<div class="ln-title">Informacion</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Nuevos</span>Explora los nuevos lanzamientos.</div>
-				<div class="nt-item"><span class="strategy">Estrategia</span>Pon a prueba tu mente para desafiar a tus enemigos.</div>
-				<div class="nt-item"><span class="racing">Aventura</span>Se parte de una travesia unica.</div>
+				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
+				<div class="nt-item"><span class="strategy">Dulces</span>Vinos elaborados con uvas muy maduras que conservan un alto contenido de azúcar. Son suaves, aromáticos y de sabor intenso.</div>
+				<div class="nt-item"><span class="racing">Rosados</span>Vinos frescos y suaves obtenidos de uvas tintas con breve contacto con las pieles. Combinan la ligereza de los blancos con un toque frutado de los tintos.</div>
 			</div>
 		</div>
 	</div>
 	<!-- Latest news section end -->
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img/page-top-bg/5.jpg">
+	<section class="page-info-section set-bg" data-setbg="img_plus/finca.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">
@@ -116,9 +116,9 @@
 	<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
-				<li><a href="indexadm.php">Inicio</a></li>
-				<li><a href="reviewadm.php">Juegos</a></li>
-				<li><a href="contactadm.php">Contacto</a></li>
+				<li><a href="index_cli.php">Inicio</a></li>
+				<li><a href="review_cli.php">Juegos</a></li>
+				<li><a href="contact_cli.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>

@@ -5,7 +5,7 @@ include 'db.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Game Warrior</title>
+	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Game Warrior Template">
 	<meta name="keywords" content="warrior, game, creative, html">
@@ -37,17 +37,20 @@ include 'db.php';
         <div class="col-md-6">
 			<input type="text" name="password" clas="form-control" placeholder="Contraseña" autofocus>
 				</div>
-        <div class="col-md-6">
+        <div class="col-md-12">
 			<input type="text" name="nombre_usuario" clas="form-control" placeholder="Ingrese su nombre" autofocus>
 				</div>
-        <div class="col-md-6">
+        <div class="col-md-12">
 			<input type="text" name="email" clas="form-control" placeholder="Ingrese su Email" autofocus>
 				</div>
-        <div class="col-md-6">
-			<input type="number" name="telefono" clas="form-control" placeholder="Ingrese su Telefono" autofocus>
+        <div class="col-md-12">
+			<input type="text" name="telefono" clas="form-control" placeholder="Ingrese su Telefono" autofocus>
 				</div>
                 <hr>
-		<div class="col-lg-12">				
+		<div class="col-lg-6">				
 			<button class="site-btn btn-sm" type="submit" name="guardar_registro">Registrarse</button>
 				</div>
+		<div class="col-lg-6">
+        <a href="index_vis.php" class="site-btn btn-sm">Volver</a>
+                </div>
         </form>

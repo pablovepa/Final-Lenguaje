@@ -1,68 +1,50 @@
 <?php
-include("db.php");
+include 'db.php'; // conexión a la base de datos
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = intval($_POST['id']);
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id_vinos = intval($_POST['id']);
     $cantidad = intval($_POST['cantidad']);
 
-    // Obtener el stock actual
-    $query = "SELECT stock FROM videojuegos WHERE id = $id";
-    $result = mysqli_query($conn, $query);
+    // Verificar stock actual
+    $stmt = $conn->prepare("SELECT nombrevino, precio, stock FROM vinos WHERE id_vinos = ?");
+    $stmt->bind_param("i", $id_vinos);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
 
-    if ($result && mysqli_num_rows($result) > 0) {
-        $juego = mysqli_fetch_assoc($result);
-        $stock_actual = $juego['stock'];
+    if ($resultado->num_rows > 0) {
+        $vino = $resultado->fetch_assoc();
 
-        // Verificar si hay stock suficiente
-        if ($stock_actual >= $cantidad) {
-            $nuevo_stock = $stock_actual - $cantidad;
+        if ($cantidad <= $vino['stock']) {
+            // Restar stock
+            $nuevo_stock = $vino['stock'] - $cantidad;
+            $update = $conn->prepare("UPDATE vinos SET stock = ? WHERE id_vinos = ?");
+            $update->bind_param("ii", $nuevo_stock, $id_vinos);
+            $update->execute();
 
-            // Actualizar el stock en la base de datos
-            $update = "UPDATE videojuegos SET stock = $nuevo_stock WHERE id = $id";
-            mysqli_query($conn, $update);
+            // Calcular total
+            $total = $cantidad * $vino['precio'];
 
-            // Mostrar mensaje de éxito
-            echo "<!DOCTYPE html>
-            <html lang='es'>
-            <head>
-                <meta charset='UTF-8'>
-                <title>Compra confirmada</title>
-                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
-                <style>
-                    body {
-                        background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
-                        color: #fff;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        height: 100vh;
-                        text-align: center;
-                    }
-                    .mensaje {
-                        background: rgba(0, 0, 0, 0.8);
-                        padding: 40px;
-                        border-radius: 15px;
-                        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-                    }
-                </style>
-            </head>
-            <body>
-                <div class='mensaje'>
-                    <h1>✅ ¡Compra realizada con éxito!</h1>
-                    <p>En <strong>3 días</strong> llegará tu pedido 🕒</p>
-                    <p><strong>📨 SE ENVIO EL RECIBO DE COMPRA A TU CORREO 📨</p>
-                    <a href='index.php' class='btn btn-success mt-3'>Volver al inicio</a>
-                </div>
-            </body>
-            </html>";
+            echo "<div style='text-align:center; font-family:Arial; margin-top:50px;'>
+                    <h2 style='color:green;'>✅ Compra realizada con éxito</h2>
+                    <p>Has comprado <strong>$cantidad</strong> unidad(es) de <strong>" . htmlspecialchars($vino['nombrevino']) . "</strong>.</p>
+                    <p>Total pagado: <strong>$$total</strong></p>
+                    <p>Gracias por tu compra 🍷</p>
+                  </div>";
+
+            // Redirigir después de unos segundos
+            echo "<script>
+                    setTimeout(function() {
+                        window.location.href = 'indexadm.php'; // página principal de la vinoteca
+                    }, 4000);
+                  </script>";
+
         } else {
-            echo "<script>alert('Lo sentimos , nos quedamos sin stock :('); window.location.href='index.php';</script>";
+            echo "<p style='color:red; text-align:center;'>❌ No hay suficiente stock disponible.</p>";
         }
     } else {
-        echo "<script>alert('Juego no encontrado.'); window.location.href='index.php';</script>";
+        echo "<p style='color:red; text-align:center;'>❌ Vino no encontrado.</p>";
     }
 } else {
-    header("Location: index.php");
-    exit;
+    echo "<p style='color:red; text-align:center;'>❌ Método de acceso inválido.</p>";
 }
 ?>

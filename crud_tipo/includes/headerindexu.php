@@ -35,7 +35,7 @@
           <a class="nav-link" href="Usuarios/deleteu.php">Eliminar</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="gestion.php">Gestion</a>
+          <a class="nav-link" href="gestion.php">Panel de Gestion</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" href="logout.php">Cerrar Sesión</a>

@@ -16,6 +16,6 @@ if(isset($_GET['id'])){
         }
     }
     //si quisiera redireccionar a index directamente: ?>
-    <script>
-    window.location = "games.php";
-    </script>
+ <script>
+    window.location.href = "delete_vino.php";
+</script>

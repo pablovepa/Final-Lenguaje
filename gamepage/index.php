@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Vinoteca La Vid Dorada</title>
+	<title>Vinoteca g1</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Vinoteca La Vid Dorada">
 	<meta name="keywords" content="vinoteca, wine, creative, html">
@@ -226,7 +226,7 @@
 			<ul class="footer-menu">
 				<li><a href="index.php">Inicio</a></li>
 				<li><a href="reviewu.php">Juegos</a></li>
-				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="contact.php">Contacto</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>

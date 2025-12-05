@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Vinoteca La Vid Dorada</title>
+	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Vinoteca La Vid Dorada">
 	<meta name="keywords" content="vinoteca, wine, creative, html">
@@ -33,8 +33,8 @@
 	<header class="header-section">
 		<div class="container">
 			<!-- logo -->
-			<a class="site-logo" href="index.html">
-				<img src="img/logo.png" alt="">
+			<a class="site-logo" href="index_vis.php">
+				<img src="img/Logo.png" alt="">
 			</a>
 			<div class="user-panel">
 				<a href="login.php"></a>
@@ -46,12 +46,14 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="review.html">Juegos</a></li>
-					<li><a href="contact.html">Contacto</a></li>
+					<li><a href="index_vis.php">Inicio</a></li>
+					<li><a href="review_vis.php">Vinos</a></li>
+					<li><a href="contact_vis.php">Contacto</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 </body>
+
 	<!-- Header section end -->
+	 

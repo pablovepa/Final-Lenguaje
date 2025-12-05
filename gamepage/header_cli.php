@@ -14,7 +14,7 @@ $tipo = $_SESSION['tipo'];
 <header class="header-section">
     <div class="container">
         <!-- logo -->
-        <a class="site-logo" href="indexadm.php">
+        <a class="site-logo" href="index_cli.php">
             <img src="img/logo.png" alt="">
         </a>
 		<div class="d-flex justify-content-end align-items-center">
@@ -36,10 +36,10 @@ $tipo = $_SESSION['tipo'];
         <!-- site menu -->
         <nav class="main-menu">
             <ul>
-                <li><a href="indexadm.php">Inicio</a></li>
-                <li><a href="reviewadm.php">Juegos</a></li>
-                <li><a href="contactadm.php">Contacto</a></li>
-                <li><a href="/final_lenguaje/crud_tipo/gestion.php">Gestion</a></li>
+                <li><a href="index_cli.php">Inicio</a></li>
+                <li><a href="review_cli.php">Vinos</a></li>
+                <li><a href="contact_cli.php">Contacto</a></li>
+                
             </ul>
         </nav>
     </div>

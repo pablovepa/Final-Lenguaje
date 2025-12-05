@@ -51,9 +51,7 @@
                                     <a href="deleteData_vino.php?id=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                     </a>
-                                    <a href="updateData_vino.php?id=<?php echo $row['id_vinos']?>">
-                                    <button type="button" class="btn btn-warning" name="update">Modificar</button>
-                                    </a>
+                                    
                                 </td>
                             </tr>
                         <?php } ?>

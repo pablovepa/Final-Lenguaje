@@ -7,17 +7,20 @@
             <h1 class="card-title">Registrar Vino</h1>
             <p class="card-text">Ingrese los datos a continuación</p>
 
-            <form action="save_vino.php" method="POST">
+            <!-- Formulario único -->
+            <form action="save_vino.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group text-start">
 
-                
+                    <!-- Nombre -->
                     <input type="text" name="nombrevino" class="form-control mb-3"
                         placeholder="Nombre del vino" required>
 
-                    <input type="text" name="precio" class="form-control mb-3"
+                    <!-- Precio -->
+                    <input type="number" step="0.01" name="precio" class="form-control mb-3"
                         placeholder="Precio" required>
 
-                    <input type="text" name="stock" class="form-control mb-3"
+                    <!-- Stock -->
+                    <input type="number" name="stock" class="form-control mb-3"
                         placeholder="Cantidad en stock" required>
 
                     <!-- TIPOS -->
@@ -27,7 +30,7 @@
                         <?php
                         $tipos = mysqli_query($conn, "SELECT id_tipos, nombre FROM tipos");
                         while ($row = mysqli_fetch_assoc($tipos)) {
-                            echo "<option value='{$row['id_tipos']}'>{$row['nombre']}</option>";
+                            echo "<option value='{$row['id_tipos']}'>" . htmlspecialchars($row['nombre']) . "</option>";
                         }
                         ?>
                     </select>
@@ -39,7 +42,7 @@
                         <?php
                         $proveedores = mysqli_query($conn, "SELECT id_proveedores, nombre FROM proveedores");
                         while ($row = mysqli_fetch_assoc($proveedores)) {
-                            echo "<option value='{$row['id_proveedores']}'>{$row['nombre']}</option>";
+                            echo "<option value='{$row['id_proveedores']}'>" . htmlspecialchars($row['nombre']) . "</option>";
                         }
                         ?>
                     </select>
@@ -51,10 +54,14 @@
                         <?php
                         $bodegas = mysqli_query($conn, "SELECT id_bodegas, nombre_bodega FROM bodegas");
                         while ($row = mysqli_fetch_assoc($bodegas)) {
-                            echo "<option value='{$row['id_bodegas']}'>{$row['nombre_bodega']}</option>";
+                            echo "<option value='{$row['id_bodegas']}'>" . htmlspecialchars($row['nombre_bodega']) . "</option>";
                         }
                         ?>
                     </select>
+
+                    <!-- IMAGEN -->
+                    <label class="form-label">Imagen del vino</label>
+                    <input type="file" name="imagen" class="form-control mb-4" accept="image/*" required>
 
                 </div>
 
@@ -66,5 +73,3 @@
 </div>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
-
-
