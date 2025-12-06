@@ -1,7 +1,8 @@
 <?php include __DIR__ . '/../includes/headeru.php'; ?>
 <?php include __DIR__ . '/../db.php'; ?>
 
-<div class ="card text-center">
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card text-center w-50 shadow">
     <div class="card-body">
         <h1 class="card-title">CREAR USUARIO</h1>
         <p class="card-text">Ingrese los datos a continuación</p>
@@ -40,6 +41,7 @@
             <div class="form-group">
             <input type="submit" class="btn btn-success" name="guardar_registro" value="Guardar"> </div>
             </div>
+            <div class="form-group">
         </form>
     </div>
 </div>

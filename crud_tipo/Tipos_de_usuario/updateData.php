@@ -27,7 +27,7 @@ if (isset($_POST['update2'])){
         ?>
         <script>alert("Registro actualizado");</script>
         <script>
-        window.location = "../index.php";
+        window.location = "update.php";
         </script>
         <?php 
     }

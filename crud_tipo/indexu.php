@@ -1,4 +1,4 @@
-<?php include("includes/headerindexu.php")?>
+<?php include("includes/headeru.php")?>
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {

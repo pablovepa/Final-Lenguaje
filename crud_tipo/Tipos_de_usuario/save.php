@@ -22,5 +22,5 @@ if (isset($_POST['guardar_registro'])){
     //si quisiera redireccionar a index directamente:
     ?>
     <script>
-    window.location = "index.php";
+    window.location = "../index.php";
     </script>

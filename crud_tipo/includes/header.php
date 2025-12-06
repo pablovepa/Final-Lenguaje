@@ -12,7 +12,7 @@
 <body>
 <!-- Bootstrap nav -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.php">Gestion Tipo de Usuarios</a>
+  <a class="navbar-brand" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/gestion.php">Inicio</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,28 +20,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/indexu.php">Gestionar Usuarios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="create.php">Crear</a>
+          <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/indexvinos.php">Gestionar Vinos</a>
+       <li class="nav-item">
+          <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/index.php">Gestionar Tipo de Usuarios</a>
       </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/gamepage/index_vis.php">Vinoteca G1</a>
       <li class="nav-item">
-          <a class="nav-link" href="read.php">Leer</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="update.php">Actualizar</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="delete.php">Eliminar</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="gestion.php">Gestion Tipo de Usuarios</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="/final_lenguaje/gamepage/indexadm.php">Game Page</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="logout.php">Cerrar Sesión</a>
+          <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/logout.php">Cerrar Sesión</a>
     </ul>                 
   </div>
 </nav>
+

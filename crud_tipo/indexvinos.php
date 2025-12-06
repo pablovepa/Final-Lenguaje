@@ -1,4 +1,4 @@
-<?php include("includes/header_vino.php")?>
+<?php include("includes/headervino.php")?>
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
@@ -19,7 +19,7 @@ if (!isset($_SESSION['usuario'])) {
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Añadir vino</h5>
+                                    <h5 class="card-title">AÑADIR VINO</h5>
                                     <p class="card-text">Esta opción permite Añadir un nuevo vino</p>
                                     <a href="vino/create_vino.php" class="btn btn-primary">Añadir</a>
                                 </div>
@@ -28,7 +28,7 @@ if (!isset($_SESSION['usuario'])) {
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Ver vinos</h5>
+                                    <h5 class="card-title">VER VINOS</h5>
                                     <p class="card-text">Esta opción permite ver la lista de vinos registrados</p>
                                     <a href="vino/read_vino.php" class="btn btn-primary">Leer</a>
                                 </div>
@@ -40,7 +40,7 @@ if (!isset($_SESSION['usuario'])) {
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Actualizar vino</h5>
+                                    <h5 class="card-title">ACTUALIZAR VINO</h5>
                                     <p class="card-text">Esta opción permite ACTUALIZAR los datos de los vinos.</p>
                                     <a href="vino/update_vino.php" class="btn btn-primary">Actualizar</a>
                                 </div>
@@ -49,7 +49,7 @@ if (!isset($_SESSION['usuario'])) {
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Eliminar vino</h5>
+                                    <h5 class="card-title">ELIMINAR VINO</h5>
                                     <p class="card-text">Esta opción permite BORRAR los vinos de la BDD</p>
                                     <a href="vino/delete_vino.php" class="btn btn-primary">Borrar</a>
                                 </div>
