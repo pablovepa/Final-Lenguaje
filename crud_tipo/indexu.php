@@ -20,7 +20,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">CREAR NUEVO USUARIO</h5>
-                                    <p class="card-text">Esta opción permite CREAR un nuevo usuario</p>
+                                    
                                     <a href="Usuarios/createu.php" class="btn btn-primary">Crear</a>
                                 </div>
                             </div>
@@ -29,7 +29,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">LEER</h5>
-                                    <p class="card-text">Esta opción permite ver la lista de usuarios registrados</p>
+                                    
                                     <a href="Usuarios/readu.php" class="btn btn-primary">Leer</a>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">ACTUALIZAR</h5>
-                                    <p class="card-text">Esta opción permite ACTUALIZAR los datos de un usuario.</p>
+                                  
                                     <a href="Usuarios/updateu.php" class="btn btn-primary">Actualizar</a>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">ELIMINAR</h5>
-                                    <p class="card-text">Esta opción permite BORRAR un usuario de la BDD</p>
+                                
                                     <a href="Usuarios/deleteu.php" class="btn btn-primary">Borrar</a>
                                 </div>
                             </div>

@@ -39,7 +39,7 @@ $tipo = $_SESSION['tipo'];
           <a href="indexu.php" class="btn btn-primary btn-lg">Gestionar Usuarios</a>
           <a href="indexvinos.php" class="btn btn-primary btn-lg">Gestionar Vino</a>
           <a href="index.php" class="btn btn-secondary btn-lg">Gestionar Tipos de Usuario</a>
-          <a href="../gamepage/index_vis.php" class="btn btn-secondary btn-lg">Vinoteca G1</a>
+          <a href="../gamepage/index.php" class="btn btn-secondary btn-lg">Vinoteca G1</a>
         </div>
       </div>
     </div>

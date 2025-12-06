@@ -37,6 +37,7 @@ $tipo = $_SESSION['tipo'];
 				<li><a href="index.php">Inicio</a></li>
 				<li><a href="reviewu.php">Vinos</a></li>
 				<li><a href="contact.php">Contacto</a></li>
+				<li><a href="../gestion.php">Gestion</a></li>
 			</ul>
 		</nav>
 	</div>

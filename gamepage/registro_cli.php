@@ -29,7 +29,7 @@ include 'db.php';
 	<div class="contact-form-warp">
 	<h4 class="comment-title">Registrate</h4>
 
-    <form class="comment-form" action="save.php" method="POST">
+    <form class="comment-form" action="/Final-Lenguaje/Final-Lenguaje/crud_tipo/Usuarios/savecli.php" method="POST">
 		<div class="row">
 		<div class="col-md-6">
 			<input type="text" name="usuario" clas="form-control" placeholder="Nombre de usuario" autofocus>
