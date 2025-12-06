@@ -50,7 +50,7 @@
 
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img_plus/war3.jpg">
+	<section class="page-info-section set-bg" data-setbg="img_vinos/uvas.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">

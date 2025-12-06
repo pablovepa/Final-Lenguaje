@@ -41,11 +41,20 @@
 </style>
 
 
+<section class="container my-5"    style="
+        background-image: url('img_vinos/Las-compuertas-Mendoza-1024x683.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    ">   
 
+    <div class="position-relative" style="z-index: 2;">
+        <h2 class="text-center mb-4 text-white">Vinos Disponibles</h2>
 
-<section class="container my-5">
-    <h2 class="text-center mb-4">Vinos Disponibles</h2>
-    <div class="row justify-content-center">
+        <div class="row justify-content-center">
+    
+
         <?php
         // Consulta ampliada con JOINs para traer tipo, proveedor y bodega
       $query = "SELECT v.id_vinos, v.nombrevino, v.precio, v.stock, v.imagen,
