@@ -43,6 +43,8 @@
                                     <a href="deleteDatau.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
                                     </a>
+                                    <div class ="card text-center">
+    
                                     
                                 </td>
                             </tr>
@@ -53,6 +55,11 @@
             </div>
         </div>
     </div> 
+    <div class="card-body">
+    <form action="../indexu.php" method="POST">
+<input type="submit" class="btn btn-success" value="Volver"> </div>
+
+            </div>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
 

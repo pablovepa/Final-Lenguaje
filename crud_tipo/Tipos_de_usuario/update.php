@@ -30,6 +30,7 @@
                                     <a href="updateData.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
                                     </a>
+                                    
                                 </td>
                                 
                             </tr>
