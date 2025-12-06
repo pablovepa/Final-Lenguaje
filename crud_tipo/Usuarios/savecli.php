@@ -20,7 +20,7 @@ if (isset($_POST['guardar_registro'])) {
     if (!$result) {
         die("Fallo en el query: " . mysqli_error($conn));
     } else {
-        echo "<script>alert('Registro Guardado'); window.location='/Final-Lenguaje/Final-Lenguaje/gamepage/index_vis.php';</script>";
+        echo "<script>alert('Registro Guardado'); window.location='/Final-Lenguaje/Final-Lenguaje/gamepage/login_cli.php';</script>";
     }
 }
 ?>

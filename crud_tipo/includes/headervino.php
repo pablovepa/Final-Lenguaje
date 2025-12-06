@@ -27,7 +27,7 @@
         <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/index.php">Gestionar Tipo de Usuarios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/gamepage/index_vis.php">Vinoteca G1</a>
+        <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/gamepage/index.php">Vinoteca G1</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/Final-Lenguaje/Final-Lenguaje/crud_tipo/logout.php">Cerrar Sesión</a>
