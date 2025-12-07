@@ -48,13 +48,14 @@
 	<!-- Latest news section end -->
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img_plus/finca.jpg">
+	<section class="page-info-section set-bg" data-setbg="img/contacto.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-5 col-lg-6 text-white">
-						<h2>Contactanos</h2>
-						<p></p>
+						<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; white-space: nowrap; line-height: 1; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+							<h2 style="letter-spacing: 3px; font-size: 55px; margin: 0; font-weight: 700; color: #ffb320;">Contactanos</h2>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -64,46 +65,46 @@
 
 
 	<!-- Page section -->
-	<section class="page-section spad contact-page">
+	<section class="page-section spad contact-page" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); padding: 80px 0;">
 		<div class="container">
 			<div class="map" id="map-canvas"></div>
 			<div class="row">
 				<div class="col-lg-4 mb-5 mb-lg-0">
-					<h4 class="comment-title">Contactanos</h4>
-					<p>Para mas informacion o cosultas puedes escribirnos o encontrarnos en nuestra sucursal.</p>
+					<h4 class="comment-title" style="color: #ffb320; font-weight: 700; letter-spacing: 1px;">Contactanos</h4>
+					<p style="color: #fff;">Para mas informacion o cosultas puedes escribirnos o encontrarnos en nuestra sucursal.</p>
 					<div class="row">
 						<div class="col-md-9">
-							<ul class="contact-info-list">
-								<li><div class="cf-left">Direccion</div><div class="cf-right">Rivadavia</div></li>
-								<li><div class="cf-left">Telefono</div><div class="cf-right">+54 345 7953 32453</div></li>
-								<li><div class="cf-left">E-mail</div><div class="cf-right">supremaciagamer@gmail.com</div></li>
+							<ul class="contact-info-list" style="list-style: none; padding: 0;">
+								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">Direccion</div><div class="cf-right" style="color: #fff;">Rivadavia</div></li>
+								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">Telefono</div><div class="cf-right" style="color: #fff;">+54 345 7953 32453</div></li>
+								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">E-mail</div><div class="cf-right" style="color: #fff;">supremaciagamer@gmail.com</div></li>
 							</ul>
 						</div>
 					</div>
-					<div class="social-links">
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
+					<div class="social-links" style="margin-top: 20px;">
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-pinterest"></i></a>
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-facebook"></i></a>
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-twitter"></i></a>
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-dribbble"></i></a>
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-behance"></i></a>
+						<a href="#" style="color: #ffb320; margin-right: 15px; font-size: 18px;"><i class="fa fa-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-8">
 					<div class="contact-form-warp">
-						<h4 class="comment-title">Deja una respuesta</h4>
+						<h4 class="comment-title" style="color: #ffb320; font-weight: 700; letter-spacing: 1px;">Deja una respuesta</h4>
 						<form class="comment-form">
 							<div class="row">
 								<div class="col-md-6">
-									<input type="text" placeholder="Nombre">
+									<input type="text" placeholder="Nombre" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 179, 32, 0.5); color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 15px;">
 								</div>
 								<div class="col-md-6">
-									<input type="email" placeholder="Email">
+									<input type="email" placeholder="Email" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 179, 32, 0.5); color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 15px;">
 								</div>
 								<div class="col-lg-12">
-									<input type="text" placeholder="Asunto">
-									<textarea placeholder="Mensaje"></textarea>
-									<button class="site-btn btn-sm">Enviar</button>
+									<input type="text" placeholder="Asunto" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 179, 32, 0.5); color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 15px; width: 100%;">
+									<textarea placeholder="Mensaje" style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 179, 32, 0.5); color: #fff; padding: 12px; border-radius: 5px; margin-bottom: 15px; width: 100%;"></textarea>
+									<button class="site-btn btn-sm" style="background: linear-gradient(135deg, #ffb320 0%, #ff9800 100%); font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Enviar</button>
 								</div>
 							</div>
 						</form>
