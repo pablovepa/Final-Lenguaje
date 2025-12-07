@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
 	<title>Vinoteca G1</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Vinoteca La Vid Dorada">
-	<meta name="keywords" content="vinoteca, wine, creative, html">
+	<meta name="description" content="Game Warrior Template">
+	<meta name="keywords" content="warrior, game, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
 	<link href="img/logo.png" rel="shortcut icon"/>
@@ -18,7 +18,6 @@
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/animate.css"/>
-
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -34,10 +33,16 @@
 		<div class="container">
 			<!-- logo -->
 			<a class="site-logo" href="index_vis.php">
-				<img src="img/Logo.png" alt="">
+				<img src="img/logo.png" alt="">
 			</a>
 			<div class="user-panel">
-				<a href="login.php"></a>
+				<a href="login_cli.php">Iniciar Sesion</a>
+			</div>
+			<div class="user-panel">
+				<a href="registro_cli.php">Registrarse</a>
+			</div>
+			<div class="user-panel">
+				<a href="login_adm.php">Administrador</a>
 			</div>
 			<!-- responsive  -->
 			<div class="nav-switch">
@@ -53,7 +58,5 @@
 			</nav>
 		</div>
 	</header>
-</body>
-
 	<!-- Header section end -->
-	 
+

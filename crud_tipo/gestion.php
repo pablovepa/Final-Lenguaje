@@ -16,19 +16,37 @@ $tipo = $_SESSION['tipo'];
 <head>
   <meta charset="utf-8">
   <title>Panel de Gestión</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../gamepage/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../gamepage/css/style.css">
 </head>
 <body class="bg-light">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <span class="navbar-brand">Panel de Gestión</span>
-    <div class="d-flex text-white">
-      <span class="me-3">👤 <?php echo htmlspecialchars($usuario); ?> (<?php echo htmlspecialchars($tipo); ?>)</span>
-      <a href="logout.php" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
+<!-- Header section (igual al sitio) -->
+<header class="header-section">
+  <div class="container">
+    <a class="site-logo" href="../gamepage/index_vis.php">
+      <img src="../gamepage/img/logo.png" alt="">
+    </a>
+    <div class="user-panel">
+      <a href="logout.php">Cerrar sesión</a>
     </div>
+    <div class="user-panel">
+      <a href="gestion.php">Panel</a>
+    </div>
+    <div class="nav-switch">
+      <i class="fa fa-bars"></i>
+    </div>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="../gamepage/index_vis.php">Inicio</a></li>
+        <li><a href="../gamepage/review_vis.php">Vinos</a></li>
+        <li><a href="../gamepage/contact_vis.php">Contacto</a></li>
+      </ul>
+    </nav>
   </div>
-</nav>
+</header>
 
 <div class="container mt-5">
   <div class="row justify-content-center">
