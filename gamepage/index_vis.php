@@ -108,7 +108,7 @@
 
 
 	<!-- Feature section -->
-	<section class="feature-section spad">
+	<section class="feature-section spad set-bg" data-setbg="img/corchos.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 p-0">
