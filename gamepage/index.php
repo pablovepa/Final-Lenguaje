@@ -165,7 +165,7 @@
 		</div>
 	</section>
 	<!-- Review section -->
-	<section class="review-section spad set-bg" data-setbg="img/parral.jpg">
+	<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
 		<div class="container">
 			<div class="section-title">
 				<div class="cata new">new</div>
@@ -177,7 +177,7 @@
 						<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
 							<div class="score yellow">9.4</div>
 						</div>
-						<div class="review-text">
+						<div class="cuadro-negro">
 							<h5>Gran Altura Malbec</h5>
 							<p>Vino tinto de carácter intenso, con notas a ciruelas, moras y un toque de cacao. Taninos suaves y final prolongado, ideal para carnes y quesos.</p>
 						</div>
@@ -188,7 +188,7 @@
 						<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
 							<div class="score purple">9.6</div>
 						</div>
-						<div class="review-text">
+						<div class="cuadro-negro">
 							<h5>Espumante Extra Brut Bruma</h5>
 							<p>Espumante fresco y elegante, con burbuja fina y aromas cítricos. Seco, equilibrado y perfecto para celebraciones o aperitivos.</p>
 						</div>
@@ -199,7 +199,7 @@
 						<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
 							<div class="score green">9.8</div>
 						</div>
-						<div class="review-text">
+						<div class="cuadro-negro">
 							<h5>Cosecha Tardía Dulce</h5>
 							<p>Dulce natural, suave y aromático, con notas a miel, durazno y flores blancas. Ideal para postres y tardes relajadas.</p>
 						</div>
@@ -210,7 +210,7 @@
 						<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
 							<div class="score pink">9.7</div>
 						</div>
-						<div class="review-text">
+						<div class="cuadro-negro">
 							<h5>Rosé Rosa Serena</h5>
 							<p>Rosado liviano y frutado, con aromas a frutilla y cereza. Fresco y suave, perfecto para comidas ligeras o disfrutar al aire libre.</p>
 						</div>
