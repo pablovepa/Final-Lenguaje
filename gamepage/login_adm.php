@@ -85,6 +85,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
 
 <div class="login-card">
+    <div class="text-center mb-3">
+        <img src="img/logo.png" alt="Vinoteca G1" style="max-width:120px; height:auto; display:inline-block;">
+    </div>
     <h4 class="text-center mb-4">Iniciar sesión</h4>
 
     <?php if ($error): ?>
