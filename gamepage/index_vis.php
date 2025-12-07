@@ -66,20 +66,24 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img_plus/malbectinto.jpg">
+			<div class="hs-item set-bg" data-setbg="img/fotoprinc.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>Malbec Reserva <span></span></h2>
-						<p>Tinto <br>Vino de gran carácter, elaborado con uvas seleccionadas y criado en barricas de roble. Presenta un color rojo profundo con reflejos violáceos, aromas intensos a frutos rojos maduros, ciruelas y notas de vainilla y cacao. En boca es suave, equilibrado y con taninos redondos, ofreciendo un final persistente y elegante. Ideal para acompañar carnes rojas, pastas y quesos maduros.<br>Consiguelo aqui.</p>
+						<div class="hero-box">
+							<h2>Vinoteca G1</h2>
+							<p>Cada botella guarda una historia</p>
+						</div>
 						
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="img_plus/chardonneyblanco.jpg">
+			<div class="hs-item set-bg" data-setbg="img/fotoprinc.jpg">
 				<div class="hs-text">
 					<div class="container">
-						<h2>Chardonnay Clásico<span></span></h2>
-						<p>Blanco <br>Vino fresco y elegante, elaborado con uvas Chardonnay seleccionadas. Presenta aromas a frutas tropicales, manzana y notas florales. En boca es equilibrado, con buena acidez y un final suave y persistente. Ideal para acompañar pescados, mariscos y platos ligeros.<br>Consiguelo aqui</p>
+						<div class="hero-box">
+							<h2>Vinoteca G1</h2>
+							<p>Cada botella guarda una historia</p>
+						</div>
 						
 					</div>
 				</div>

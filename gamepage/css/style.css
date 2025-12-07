@@ -58,13 +58,13 @@ p {
   line-height: 2;
 }
 
-/* El cuadro negro */
+
 .cuadro-negro {
-  background-color: #000;   /* Fondo negro */
-  color: #fff;              /* Texto blanco */
-  padding: 15px;            /* Espaciado interno */
-  border-radius: 8px;       /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra elegante */
+  background-color: #000;  
+  color: #fff;             
+  padding: 15px;          
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 img {
@@ -362,6 +362,35 @@ ol {
 	background-color: #ffb320;
 	padding: 25px 40px;
 	display: inline-block;
+.hero-slider .hs-text .hero-box {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 3px solid #ffb320;
+	padding: 40px 50px;
+	border-radius: 10px;
+	max-width: 500px;
+	z-index: 10;
+}
+
+.hero-slider .hs-text .hero-box h2 {
+	color: #ffb320;
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-slider .hs-text .hero-box p {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 0;
+	opacity: 1;
+	top: 0;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+	position: static;
+}
 	border-radius: 0;
 	border: 1px solid #ffb320;
 }
@@ -900,7 +929,7 @@ ol {
 .page-info-section .pi-content {
 	position: absolute;
 	width: 100%;
-	bottom: 65px;
+	top: 20px;
 	left: 0;
 	z-index: 2;
 }
@@ -909,6 +938,11 @@ ol {
 	font-size: 60px;
 	margin-bottom: 25px;
 	font-weight: 400;
+}
+
+.page-info-section .pi-content p {
+	font-size: 24px;
+	color: #fff;
 }
 
 .site-pagination {

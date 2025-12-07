@@ -50,13 +50,15 @@
 
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img_vinos/uvas.jpg">
+	<section class="page-info-section set-bg" data-setbg="img/partevinos.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-5 col-lg-6 text-white">
-						<h2>Warhammer 40k</h2>
-						<p>Una epopeya de fe, destrucción y sacrificio, donde cada batalla es una chispa más en el fuego infinito de la guerra que consume el universo.</p>
+						<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; white-space: nowrap; line-height: 1; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+							<h2 style="letter-spacing: 3px; font-size: 55px; margin: 0; font-weight: 700; color: #ffb320;">Nuestros Vinos</h2>
+						</div>
+						<p style="margin-top: 25px; font-size: 20px; color: #fff; letter-spacing: 1px; line-height: 1.6;">Amplia variedad para todos los gustos y colores.</p>
 					</div>
 				</div>
 			</div>
