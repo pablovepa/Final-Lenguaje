@@ -107,7 +107,7 @@
 		<div class="container">
 			<div class="section-title">
 				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
-					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Clasicos</h2>
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">CLASICOS</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -152,7 +152,7 @@
 		<div class="container">
 			<div class="section-title">
 				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
-					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Mas Valorados</h2>
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">MAS VALORADOS</h2>
 				</div>
 			</div>
 			<div class="row">

@@ -37,7 +37,7 @@
 
 	<!-- Latest news section -->
 	<div class="latest-news-section">
-		<div class="ln-title">Mas Valorados</div>
+		<div class="ln-title">MAS VALORADOS</div>
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
 				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
