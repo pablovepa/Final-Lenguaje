@@ -14,7 +14,7 @@ if(mysqli_num_rows($result) ==1) {
     $nombre_usuario = $row['nombre_usuario'];
     $email = $row['email'];
     $telefono = $row['telefono'];
-    $pais = $row['pais'];
+
     }
 }
 if (isset($_POST['update2'])){
@@ -25,11 +25,11 @@ if (isset($_POST['update2'])){
     $nombre_usuario = $_POST['nombre_usuario'];
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
-    $pais = $_POST['pais'];
+   
 
     $query = "UPDATE tbl_usuarios
         SET usuario = '$usuario', password = '$password', tipo_usuario = '$tipo_usuario',
-        nombre_usuario = '$nombre_usuario' , email = '$email' , telefono = '$telefono', pais = '$pais'                           
+        nombre_usuario = '$nombre_usuario' , email = '$email' , telefono = '$telefono'                           
             WHERE id = $codigo";
                         // die( $query);
     $result = mysqli_query($conn,$query);
@@ -90,22 +90,7 @@ if (isset($_POST['update2'])){
                 <label for="telefono">Teléfono:</label>
                 <input type="text" name="telefono" class="form-control" value="<?php echo $telefono; ?>">
             </div>
-            <div class="form-group mb-3">
-            <label for="pais">País:</label>
-                    <select name="pais" id="pais" required>
-                        <option value="">Seleccione un país...</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Chile">Chile</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Brasil">Brasil</option>
-                        <option value="México">México</option>
-                        <option value="España">España</option>
-                        <option value="Estados Unidos">Estados Unidos</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Perú">Perú</option>
-                    </select>
-            </div>
+          
             <button class="btn btn-success w-100" name="update2">Actualizar</button>
         </form>
     </div>

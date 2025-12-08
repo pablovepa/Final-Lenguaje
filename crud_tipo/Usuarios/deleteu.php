@@ -18,14 +18,14 @@
                             <th>Nombre Usuario</th>
                             <th>Email</th>
                             <th>Telefono</th>
-                             <th>Pais</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         $query = "SELECT u.id, u.usuario, u.password, 
                         t.nombre AS tipo_usuario,
-                         u.nombre_usuario, u.email, u.telefono, u.pais
+                         u.nombre_usuario, u.email, u.telefono
                         FROM tbl_usuarios u
                         INNER JOIN tbl_tipos_usuarios t 
                         ON u.tipo_usuario = t.id";
@@ -40,7 +40,7 @@
                                 <td><?php echo $row['nombre_usuario']?></td>
                                 <td><?php echo $row['email']?></td>
                                 <td><?php echo $row['telefono']?></td>                           
-                                <td><?php echo $row['pais']?></td>
+                             
                                 <td>
                                     <a href="deleteDatau.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
