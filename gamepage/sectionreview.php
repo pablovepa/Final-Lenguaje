@@ -121,3 +121,129 @@
         </div>
     </div>
 </section>
+
+<!-- Review section -->
+<style>
+.offer-item {
+	position: relative;
+	overflow: visible;
+}
+.offer-item .buy-btn {
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(135deg, #ffb320, #ff9800);
+	color: #fff;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 50px;
+	font-weight: 700;
+	transition: all 0.3s ease;
+	z-index: 10;
+	white-space: nowrap;
+	opacity: 0;
+}
+.offer-item:hover .buy-btn {
+	opacity: 1;
+}
+.offer-item .buy-btn:hover {
+	background: linear-gradient(135deg, #ff9800, #ffb320);
+	box-shadow: 0 5px 20px rgba(255, 179, 32, 0.5);
+	transform: translateX(-50%) translateY(-2px);
+}
+.price-container {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 10px;
+}
+.price-original {
+	color: #999;
+	font-size: 16px;
+	text-decoration: line-through;
+}
+.price-discount {
+	color: #ffb320;
+	font-size: 24px;
+	font-weight: 700;
+}
+.offer-item .score {
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	padding: 3px !important;
+	line-height: 1.2 !important;
+}
+</style>
+<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
+	<div class="container">
+		<div class="section-title">
+			<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+				<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Ofertas Imperdibles</h2>
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 80px;">
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
+					<div class="score" style="background: rgba(255, 179, 32, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">50%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Gran Altura Malbec</h5>
+						<div class="price-container">
+							<span class="price-original">$12000</span>
+							<span class="price-discount">$6000</span>
+						</div>
+					</div>
+					<button class="buy-btn">Comprar</button>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
+					<div class="score" style="background: rgba(105, 78, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">60%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Espumante Extra Brut Bruma</h5>
+						<div class="price-container">
+							<span class="price-original">$15000</span>
+							<span class="price-discount">$6000</span>
+						</div>
+					</div>
+					<button class="buy-btn">Comprar</button>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
+					<div class="score" style="background: rgba(78, 174, 96, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">70%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Cosecha Tardía Dulce</h5>
+						<div class="price-container">
+							<span class="price-original">$18000</span>
+							<span class="price-discount">$5400</span>
+						</div>
+					</div>
+					<button class="buy-btn">Comprar</button>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
+					<div class="score" style="background: rgba(255, 32, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">80%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Rosé Rosa Serena</h5>
+						<div class="price-container">
+							<span class="price-original">$13500</span>
+							<span class="price-discount">$2700</span>
+						</div>
+					</div>
+					<button class="buy-btn">Comprar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Review section end -->
