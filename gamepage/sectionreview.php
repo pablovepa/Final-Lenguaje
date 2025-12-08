@@ -174,8 +174,8 @@
 	padding: 3px !important;
 	line-height: 1.2 !important;
 }
-</style>
-<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
+ </style>
+  <section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
 	<div class="container">
 		<div class="section-title">
 			<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
@@ -195,7 +195,7 @@
 							<span class="price-discount">$6000</span>
 						</div>
 					</div>
-					<a href="comprar.php?nombre=Gran Altura Malbec" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
+					<a  class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
