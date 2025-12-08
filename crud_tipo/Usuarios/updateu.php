@@ -7,9 +7,7 @@
             <h1 class="card-title">ACTUALIZAR DATOS</h1>
             <p class="card-text">Los siguientes son los datos guardados hasta el momento:</p>
 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-                <a href="createu.php" class="btn btn-primary" name="create">Agregar</a>
-            </div>
+            
          
             <div class="table-responsive-sm">
                 <table class="table">
