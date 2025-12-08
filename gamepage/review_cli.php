@@ -57,8 +57,9 @@
                 <li><a href="review_cli.php">Vinos</a></li>
                 <li><a href="contact_cli.php">Contacto</a></li>
             </ul>
-            <p class="copyright">
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados
+            <p class="copyright" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                <img src="img/logo.png" alt="Logo" style="height: 40px; width: auto;">
+                <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados</span>
             </p>
         </div>
     </footer>

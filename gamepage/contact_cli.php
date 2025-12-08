@@ -121,8 +121,9 @@
 				<li><a href="review_cli.php">Vinos</a></li>
 				<li><a href="contact_cli.php">Contacto</a></li>
 			</ul>
-			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+			<p class="copyright" style="display: flex; align-items: center; justify-content: center; gap: 15px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<img src="img/logo.png" alt="Logo" style="height: 40px; width: auto;">
+				<span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a></span>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
 		</div>
