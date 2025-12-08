@@ -8,12 +8,13 @@ if (isset($_POST['guardar_registro'])) {
     $nombre_usuario = $_POST['nombre_usuario'];
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
+    $pais = $_POST['pais'];
 
     // Tipo fijo para CLIENTE — NO viene del formulario
     $tipo_usuario = 2; // ID del tipo cliente en tu tabla tbl_tipos_usuarios
 
-    $query = "INSERT INTO tbl_usuarios (usuario, password, tipo_usuario, nombre_usuario, email, telefono)
-              VALUES ('$usuario', '$password', '$tipo_usuario', '$nombre_usuario', '$email', '$telefono')";
+    $query = "INSERT INTO tbl_usuarios (usuario, password, tipo_usuario, nombre_usuario, email, telefono, pais)
+              VALUES ('$usuario', '$password', '$tipo_usuario', '$nombre_usuario', '$email', '$telefono', '$pais')";
 
     $result = mysqli_query($conn, $query);
 
