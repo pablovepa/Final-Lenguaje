@@ -73,6 +73,11 @@
 	<!-- Feature section -->
 	<section class="feature-section spad set-bg" data-setbg="img/corchos.jpg">
 		<div class="container">
+			<div class="section-title">
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin: 0;">Nuestras Selecciones</h2>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6 p-0">
 					<div class="feature-item set-bg" data-setbg="img_plus/lp32.jpg">
@@ -124,8 +129,9 @@
 	<section class="recent-game-section spad set-bg" data-setbg="img/uvas.jpg">
 		<div class="container">
 			<div class="section-title">
-				<div class="cata new">Otros Exitos</div>
-				<h2>Clasicos</h2>
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Clasicos</h2>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
@@ -174,8 +180,9 @@
 	<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
 		<div class="container">
 			<div class="section-title">
-				<div class="cata new">new</div>
-				<h2>Mas Valorados</h2>
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Mas Valorados</h2>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
