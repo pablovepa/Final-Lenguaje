@@ -7,7 +7,7 @@
 	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/logo.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -112,7 +112,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/granalturamalbec.jpg">
-							<div class="cata new">Gran Altura Malbec</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Gran Altura Malbec</div>
 						</div>
 						<div class="cuadro-negro">
 							<h5>Descubrí la intensidad de los Andes</h5>
@@ -123,7 +123,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/brumadelosvalles.jpg">
-							<div class="cata racing">Bruma de los Valles</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Bruma de los Valles</div>
 						</div>
 						<div class="cuadro-negro">
 							<h5>Elegancia y frescura en cada burbuja</h5>
@@ -134,7 +134,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/rosaserena.jpg">
-							<div class="cata adventure">Rosé Serena</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Rosa Serena</div>
 						</div>
 						<div class="cuadro-negro">
 							<h5>Ligero, frutado y perfecto para cualquier momento</h5>
@@ -155,10 +155,10 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
-							<div class="score yellow">9.4</div>
-						</div>
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
+						<div class="score" style="background: rgba(255, 179, 32, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.4</div>
+					</div>
 						<div class="cuadro-negro">
 							<h5>Gran Altura Malbec</h5>
 							<p>Vino tinto de carácter intenso, con notas a ciruelas, moras y un toque de cacao. Taninos suaves y final prolongado, ideal para carnes y quesos.</p>
@@ -166,10 +166,10 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
-							<div class="score purple">9.6</div>
-						</div>
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
+						<div class="score" style="background: rgba(105, 78, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.6</div>
+					</div>
 						<div class="cuadro-negro">
 							<h5>Espumante Extra Brut Bruma</h5>
 							<p>Espumante fresco y elegante, con burbuja fina y aromas cítricos. Seco, equilibrado y perfecto para celebraciones o aperitivos.</p>
@@ -177,10 +177,10 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
-							<div class="score green">9.8</div>
-						</div>
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
+						<div class="score" style="background: rgba(78, 174, 96, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.8</div>
+					</div>
 						<div class="cuadro-negro">
 							<h5>Cosecha Tardía Dulce</h5>
 							<p>Dulce natural, suave y aromático, con notas a miel, durazno y flores blancas. Ideal para postres y tardes relajadas.</p>
@@ -188,10 +188,10 @@
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
-							<div class="score pink">9.7</div>
-						</div>
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
+						<div class="score" style="background: rgba(255, 32, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.7</div>
+					</div>
 						<div class="cuadro-negro">
 							<h5>Rosé Rosa Serena</h5>
 							<p>Rosado liviano y frutado, con aromas a frutilla y cereza. Fresco y suave, perfecto para comidas ligeras o disfrutar al aire libre.</p>
@@ -205,16 +205,39 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="reviewu.php">Juegos</a></li>
-				<li><a href="contact.php">Contacto</a></li>
-			</ul>
-			<p class="copyright" style="display: flex; align-items: center; justify-content: center; gap: 15px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				<img src="img/logo.png" alt="Logo" style="height: 40px; width: auto;">
-				<span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a></span>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/logo.png" alt="Vinoteca G1" style="height: 60px; margin-bottom: 15px;">
+					<p style="color: #999; font-size: 14px; max-width: 300px;">Descubre los mejores vinos con la calidad y tradición que nos caracteriza.</p>
+				</div>
+				
+				<div class="footer-links">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Navegación</h5>
+					<ul class="footer-menu">
+						<li><a href="index.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
+						<li><a href="reviewu.php"><i class="fa fa-angle-right"></i> Vinos</a></li>
+						<li><a href="contact.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-social">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<p style="color: #999; margin-top: 15px; font-size: 13px;"><i class="fa fa-envelope"></i> info@vinotecag1.com</p>
+					<p style="color: #999; font-size: 13px;"><i class="fa fa-phone"></i> +54 261 123-4567</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vinoteca G1. Todos los derechos reservados.
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Footer section end -->

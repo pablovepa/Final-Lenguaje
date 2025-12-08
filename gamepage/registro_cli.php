@@ -9,7 +9,7 @@ include __DIR__ . '/../crud_tipo/db.php';
     <title>Registrarse</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="img/logo.png" rel="shortcut icon"/>
+    <link href="img/favicon.png" rel="shortcut icon"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>

@@ -1,58 +1,86 @@
 <?php include("db.php"); ?>
 
 <style>
-    .btn-primary {
-        background-color: #fcb23b;
-        border-color: #fcb23b;
-        color: #fff;
-    }
-    .btn-primary:hover,
-    .btn-primary:focus {
-        background-color: #e6a100;
-        border-color: #e6a100;
-        color: #fff;
+    .vinos-section {
+        background-color: #000;
+        padding: 60px 0;
     }
 
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .vinos-section .card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 179, 32, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
         height: 100%;
     }
 
-    .card-body {
+    .vinos-section .card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 179, 32, 0.6);
+        box-shadow: 0 8px 25px rgba(255, 179, 32, 0.3);
+    }
+
+    .vinos-section .card-img-top {
+        border-radius: 10px 10px 0 0;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .vinos-section .card-body {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0 0 10px 10px;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .card-text {
+    .vinos-section .card-title {
+        color: #ffb320;
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+
+    .vinos-section .card-text {
+        color: #fff;
         margin-bottom: 0.5rem;
     }
 
-    .card .btn {
+    .vinos-section .btn-primary {
+        background: linear-gradient(135deg, #ffb320, #e6a100);
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        transition: all 0.3s ease;
         margin-top: auto;
     }
 
-    .col-md-4 {
+    .vinos-section .btn-primary:hover {
+        background: linear-gradient(135deg, #e6a100, #d49100);
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(255, 179, 32, 0.4);
+    }
+
+    .vinos-section .col-md-4 {
         display: flex;
+        margin-bottom: 30px;
+    }
+
+    .vinos-section h2 {
+        color: #ffb320;
+        font-weight: 700;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 40px;
     }
 </style>
 
 
-<section class="container my-5"    style="
-        background-image: url('img_vinos/Las-compuertas-Mendoza-1024x683.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-    ">   
+<section class="vinos-section">
+    <div class="container">
+        <h2 class="text-center">Vinos Disponibles</h2>
 
-    <div class="position-relative" style="z-index: 2;">
-        <h2 class="text-center mb-4 text-white">Vinos Disponibles</h2>
-
-        <div class="row justify-content-center">
+        <div class="row">
     
 
         <?php
@@ -90,5 +118,6 @@
             echo "<p class='text-white'>No hay vinos registrados.</p>";
         }
         ?>
+        </div>
     </div>
 </section>

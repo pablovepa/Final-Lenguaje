@@ -9,7 +9,7 @@
 	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/logo.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -118,11 +118,40 @@
         color: #fff;
     }
 
+    .vinos-section {
+        background-color: #000;
+        padding: 60px 0;
+    }
+
+    .vinos-section h2 {
+        color: #ffb320;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 179, 32, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        border-color: rgba(255, 179, 32, 0.6);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(255, 179, 32, 0.3);
+    }
+
+    .card-img-top {
+        border-radius: 10px 10px 0 0;
+        height: 300px;
+        object-fit: cover;
     }
 
     .card-body {
@@ -130,14 +159,41 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-title {
+        color: #ffb320;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     .card-text {
-        margin-bottom: 0.5rem;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .card-text strong {
+        color: #ffb320;
     }
 
     .card .btn {
         margin-top: auto;
+        background: linear-gradient(135deg, #ffb320 0%, #ff9800 100%);
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+
+    .card .btn:hover {
+        background: linear-gradient(135deg, #ff9800 0%, #ffb320 100%);
+        box-shadow: 0 5px 20px rgba(255, 179, 32, 0.4);
+        transform: translateY(-2px);
     }
 
     .col-md-4 {
@@ -148,8 +204,9 @@
 
 
 
-<section class="container my-5">
-    <h2 class="text-center mb-4">Vinos Disponibles</h2>
+<section class="vinos-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Vinos Disponibles</h2>
     <div class="row justify-content-center">
         <?php
         // Consulta ampliada con JOINs para traer tipo, proveedor y bodega
@@ -187,6 +244,7 @@
         }
         ?>
     </div>
+    </div>
 </section>
 
  
@@ -195,16 +253,39 @@
 <!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index_vis.php">Inicio</a></li>
-				<li><a href="review_vis.php">Vinos</a></li>
-				<li><a href="contact_vis.php">Contacto</a></li>
-			</ul>
-			<p class="copyright" style="display: flex; align-items: center; justify-content: center; gap: 15px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				<img src="img/logo.png" alt="Logo" style="height: 40px; width: auto;">
-				<span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a></span>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/logo.png" alt="Vinoteca G1" style="height: 60px; margin-bottom: 15px;">
+					<p style="color: #999; font-size: 14px; max-width: 300px;">Descubre los mejores vinos con la calidad y tradición que nos caracteriza.</p>
+				</div>
+				
+				<div class="footer-links">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Navegación</h5>
+					<ul class="footer-menu">
+						<li><a href="index_vis.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
+						<li><a href="review_vis.php"><i class="fa fa-angle-right"></i> Vinos</a></li>
+						<li><a href="contact_vis.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-social">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<p style="color: #999; margin-top: 15px; font-size: 13px;"><i class="fa fa-envelope"></i> info@vinotecag1.com</p>
+					<p style="color: #999; font-size: 13px;"><i class="fa fa-phone"></i> +54 261 123-4567</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vinoteca G1. Todos los derechos reservados.
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Footer section end -->

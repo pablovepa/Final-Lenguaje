@@ -8,7 +8,7 @@
 	<meta name="keywords" content="warrior, game, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/logo.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -67,18 +67,42 @@
 	<!-- Page info section -->
 <?php include 'sectionreview.php'; ?>
 <!-- Footer section -->
+	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="reviewu.php">Vinos</a></li>
-				<li><a href="contact.php">Contacto</a></li>
-			</ul>
-			<p class="copyright" style="display: flex; align-items: center; justify-content: center; gap: 15px;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				<img src="img/logo.png" alt="Logo" style="height: 40px; width: auto;">
-				<span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a></span>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/logo.png" alt="Vinoteca G1" style="height: 60px; margin-bottom: 15px;">
+					<p style="color: #999; font-size: 14px; max-width: 300px;">Descubre los mejores vinos con la calidad y tradición que nos caracteriza.</p>
+				</div>
+				
+				<div class="footer-links">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Navegación</h5>
+					<ul class="footer-menu">
+						<li><a href="index.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
+						<li><a href="reviewu.php"><i class="fa fa-angle-right"></i> Vinos</a></li>
+						<li><a href="contact.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-social">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<p style="color: #999; margin-top: 15px; font-size: 13px;"><i class="fa fa-envelope"></i> info@vinotecag1.com</p>
+					<p style="color: #999; font-size: 13px;"><i class="fa fa-phone"></i> +54 261 123-4567</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vinoteca G1. Todos los derechos reservados.
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Footer section end -->
