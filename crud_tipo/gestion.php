@@ -109,9 +109,7 @@ $tipo = $_SESSION['tipo'];
         <div class="user-panel">
             <a href="logout.php">Cerrar sesión</a>
         </div>
-        <div class="user-panel">
-            <a href="gestion.php">Panel</a>
-        </div>
+      
         <div class="nav-switch">
             <i class="fa fa-bars"></i>
         </div>
