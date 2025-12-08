@@ -9,7 +9,7 @@
 	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/logo.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -90,13 +90,16 @@
 
 
 	<!-- Page info section -->
-	<section class="page-info-section set-bg" data-setbg="img_plus/finca.jpg">
+	<section class="page-info-section set-bg" data-setbg="img/partevinos.jpg">
 		<div class="pi-content">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-5 col-lg-6 text-white">
-						<h2>El Horizonte</h2>
-                        <p>Amplios viñedos y vistas abiertas que brindan una sensación de libertad y tranquilidad.</p>
+						<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; white-space: nowrap; line-height: 1; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+							<h2 style="letter-spacing: 3px; font-size: 55px; margin: 0; font-weight: 700; color: #ffb320;">Nuestros Vinos</h2>
+						</div>
+						<p style="margin-top: 25px; font-size: 20px; color: #fff; letter-spacing: 1px; line-height: 1.6;">Amplia variedad para todos los gustos y colores.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -115,11 +118,40 @@
         color: #fff;
     }
 
+    .vinos-section {
+        background-color: #000;
+        padding: 60px 0;
+    }
+
+    .vinos-section h2 {
+        color: #ffb320;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid rgba(255, 179, 32, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        border-color: rgba(255, 179, 32, 0.6);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(255, 179, 32, 0.3);
+    }
+
+    .card-img-top {
+        border-radius: 10px 10px 0 0;
+        height: 300px;
+        object-fit: cover;
     }
 
     .card-body {
@@ -127,14 +159,41 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-title {
+        color: #ffb320;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
 
     .card-text {
-        margin-bottom: 0.5rem;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .card-text strong {
+        color: #ffb320;
     }
 
     .card .btn {
         margin-top: auto;
+        background: linear-gradient(135deg, #ffb320 0%, #ff9800 100%);
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+
+    .card .btn:hover {
+        background: linear-gradient(135deg, #ff9800 0%, #ffb320 100%);
+        box-shadow: 0 5px 20px rgba(255, 179, 32, 0.4);
+        transform: translateY(-2px);
     }
 
     .col-md-4 {
@@ -145,8 +204,9 @@
 
 
 
-<section class="container my-5">
-    <h2 class="text-center mb-4">Vinos Disponibles</h2>
+<section class="vinos-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Vinos Disponibles</h2>
     <div class="row justify-content-center">
         <?php
         // Consulta ampliada con JOINs para traer tipo, proveedor y bodega
@@ -176,7 +236,7 @@
                 echo "<p class='card-text'><strong>Tipo:</strong> " . htmlspecialchars($row['tipo']) . "</p>";
                 echo "<p class='card-text'><strong>Proveedor:</strong> " . htmlspecialchars($row['proveedor']) . "</p>";
                 echo "<p class='card-text'><strong>Bodega:</strong> " . htmlspecialchars($row['bodega']) . "</p>";
-                echo "<a href='registro_cli.php?id=" . urlencode($row['id_vinos']) . "' class='btn btn-primary w-100 mt-2'>Comprar</a>";
+                echo "<a href='login_cli.php?redirect=comprar&id=" . urlencode($row['id_vinos']) . "' class='btn btn-primary w-100 mt-2'>Comprar</a>";
                 echo "</div></div></div>";
             }
         } else {
@@ -184,7 +244,134 @@
         }
         ?>
     </div>
+    </div>
 </section>
+
+<!-- Review section -->
+<style>
+.offer-item {
+	position: relative;
+	overflow: visible;
+}
+.offer-item .buy-btn {
+	position: absolute;
+	bottom: -70px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(135deg, #ffb320, #ff9800);
+	color: #fff;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 50px;
+	font-weight: 700;
+	transition: all 0.3s ease;
+	z-index: 10;
+	white-space: nowrap;
+	opacity: 0;
+}
+.offer-item:hover .buy-btn {
+	opacity: 1;
+}
+.offer-item .buy-btn:hover {
+	background: linear-gradient(135deg, #ff9800, #ffb320);
+	box-shadow: 0 5px 20px rgba(255, 179, 32, 0.5);
+	transform: translateX(-50%) translateY(-2px);
+}
+.price-container {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-top: 10px;
+}
+.price-original {
+	color: #999;
+	font-size: 16px;
+	text-decoration: line-through;
+}
+.price-discount {
+	color: #ffb320;
+	font-size: 24px;
+	font-weight: 700;
+}
+.offer-item .score {
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	padding: 3px !important;
+	line-height: 1.2 !important;
+}
+</style>
+<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
+	<div class="container">
+		<div class="section-title">
+			<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+				<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Ofertas Imperdibles</h2>
+			</div>
+		</div>
+		<div class="row" style="margin-bottom: 80px;">
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
+					<div class="score" style="background: rgba(255, 179, 32, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">50%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Gran Altura Malbec</h5>
+						<div class="price-container">
+							<span class="price-original">$12000</span>
+							<span class="price-discount">$6000</span>
+						</div>
+					</div>
+					<a href="login_cli.php?redirect=comprar&nombre=Gran Altura Malbec" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
+					<div class="score" style="background: rgba(105, 78, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">60%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Espumante Extra Brut Bruma</h5>
+						<div class="price-container">
+							<span class="price-original">$15000</span>
+							<span class="price-discount">$6000</span>
+						</div>
+					</div>
+					<a href="login_cli.php?redirect=comprar&nombre=Espumante Extra Brut Bruma" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
+					<div class="score" style="background: rgba(78, 174, 96, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">70%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Cosecha Tardía Dulce</h5>
+						<div class="price-container">
+							<span class="price-original">$18000</span>
+							<span class="price-discount">$5400</span>
+						</div>
+					</div>
+					<a href="login_cli.php?redirect=comprar&nombre=Cosecha Tardía Dulce" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			<div class="review-item offer-item">
+				<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
+					<div class="score" style="background: rgba(255, 32, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">80%OFF</div>
+				</div>
+					<div class="cuadro-negro">
+						<h5>Rosé Rosa Serena</h5>
+						<div class="price-container">
+							<span class="price-original">$13500</span>
+							<span class="price-discount">$2700</span>
+						</div>
+					</div>
+					<a href="login_cli.php?redirect=comprar&nombre=Rosé Rosa Serena" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Review section end -->
 
  
 
@@ -192,15 +379,39 @@
 <!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index_vis.php">Inicio</a></li>
-				<li><a href="review_vis.php">Vinos</a></li>
-				<li><a href="contact_vis.php">Contacto</a></li>
-			</ul>
-			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/logo.png" alt="Vinoteca G1" style="height: 60px; margin-bottom: 15px;">
+					<p style="color: #999; font-size: 14px; max-width: 300px;">Descubre los mejores vinos con la calidad y tradición que nos caracteriza.</p>
+				</div>
+				
+				<div class="footer-links">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Navegación</h5>
+					<ul class="footer-menu">
+						<li><a href="index_vis.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
+						<li><a href="review_vis.php"><i class="fa fa-angle-right"></i> Vinos</a></li>
+						<li><a href="contact_vis.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-social">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<p style="color: #999; margin-top: 15px; font-size: 13px;"><i class="fa fa-envelope"></i> info@vinotecag1.com</p>
+					<p style="color: #999; font-size: 13px;"><i class="fa fa-phone"></i> +54 261 123-4567</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vinoteca G1. Todos los derechos reservados.
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Footer section end -->

@@ -7,7 +7,7 @@
 	<meta name="keywords" content="vinoteca, wine, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Favicon -->   
-	<link href="img/logo.png" rel="shortcut icon"/>
+	<link href="img/favicon.png" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
@@ -29,19 +29,14 @@
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg" data-setbg="img_plus/malbectinto.jpg">
-				<div class="hs-text">
+			<div class="hs-item set-bg" data-setbg="img/fotoprinc.jpg">
+				<div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); z-index: 1;"></div>
+				<div class="hs-text" style="position: relative; z-index: 2;">
 					<div class="container">
-						<h2>Malbec Reserva <span></span></h2>
-						<p>Tinto <br>Vino de gran carácter, elaborado con uvas seleccionadas y criado en barricas de roble. Presenta un color rojo profundo con reflejos violáceos, aromas intensos a frutos rojos maduros, ciruelas y notas de vainilla y cacao. En boca es suave, equilibrado y con taninos redondos, ofreciendo un final persistente y elegante. Ideal para acompañar carnes rojas, pastas y quesos maduros.<br>Consiguelo aqui.</p>
-					</div>
-				</div>
-			</div>
-			<div class="hs-item set-bg" data-setbg="img_plus/chardonneyblanco.jpg">
-				<div class="hs-text">
-					<div class="container">
-						<h2>Chardonnay Clásico<span></span></h2>
-						<p>Blanco <br>Vino fresco y elegante, elaborado con uvas Chardonnay seleccionadas. Presenta aromas a frutas tropicales, manzana y notas florales. En boca es equilibrado, con buena acidez y un final suave y persistente. Ideal para acompañar pescados, mariscos y platos ligeros.<br>Consiguelo aqui</p>
+						<div class="hero-box" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(26, 26, 26, 0.75)); padding: 50px 60px; border-radius: 10px; border-left: 6px solid #ffb320; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); max-width: 700px;">
+							<h2 style="color: #ffffff; font-size: 72px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);">Vinoteca G1</h2>
+							<p style="color: #d4af37; font-size: 24px; font-weight: 300; font-style: italic; letter-spacing: 1px; margin: 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Cada botella guarda una historia</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -50,23 +45,14 @@
 	<!-- Hero section end -->
 
 
-	<!-- Latest news section -->
-	<div class="latest-news-section">
-		<div class="ln-title">Nuestra seleccion</div>
-		<div class="news-ticker">
-			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
-				<div class="nt-item"><span class="strategy">Dulces</span>Vinos elaborados con uvas muy maduras que conservan un alto contenido de azúcar. Son suaves, aromáticos y de sabor intenso.</div>
-				<div class="nt-item"><span class="racing">Rosados</span>Vinos frescos y suaves obtenidos de uvas tintas con breve contacto con las pieles. Combinan la ligereza de los blancos con un toque frutado de los tintos.</div>
-			</div>
-		</div>
-	</div>
-	<!-- Latest news section end -->
-
-
 	<!-- Feature section -->
-	<section class="feature-section spad">
+	<section class="feature-section spad set-bg" data-setbg="img/corchos.jpg">
 		<div class="container">
+			<div class="section-title">
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin: 0;">Nuestras Selecciones</h2>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6 p-0">
 					<div class="feature-item set-bg" data-setbg="img_plus/lp32.jpg">
@@ -115,49 +101,44 @@
 
 
 	<!-- Recent game section  -->
-	<section class="recent-game-section spad set-bg" data-setbg="img/uvas.jpg">
+	<section class="recent-game-section spad set-bg" data-setbg="img/vinotin.jpg">
 		<div class="container">
 			<div class="section-title">
-				<div class="cata new">Otros Exitos</div>
-				<h2>Clasicos</h2>
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Clasicos</h2>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/granalturamalbec.jpg">
-							<div class="cata new">Gran Altura Malbec</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Gran Altura Malbec</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Descubrí la intensidad de los Andes</h5>
 							<p>Vino tinto elaborado con uvas de altura, que ofrece aromas a ciruelas, moras y un toque de cacao. En boca es equilibrado, con taninos suaves y un final prolongado. Ideal para carnes rojas y quesos intensos.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/brumadelosvalles.jpg">
-							<div class="cata racing">Bruma de los Valles</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Bruma de los Valles</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Elegancia y frescura en cada burbuja</h5>
 							<p>Espumante de burbuja fina, con notas cítricas y frutales. Su sabor es seco, refrescante y perfecto para celebraciones, aperitivos o comidas ligeras. Una opción moderna y versátil.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="recent-game-item">
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/rosaserena.jpg">
-							<div class="cata adventure">Rosé Serena</div>
+							<div style="background-color: rgba(0, 0, 0, 0.85); padding: 8px 20px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); color: #ffb320; font-weight: 700; letter-spacing: 1px; font-size: 14px;">Rosa Serena</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Ligero, frutado y perfecto para cualquier momento</h5>
 							<p>Vino rosado de tono suave, con aromas a frutillas y flores blancas. En boca es fresco y equilibrado, ideal para tardes cálidas, ensaladas, sushi o pastas livianas.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
@@ -165,52 +146,53 @@
 		</div>
 	</section>
 	<!-- Review section -->
-	<section class="review-section spad set-bg" data-setbg="img/parral.jpg">
+	<section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
 		<div class="container">
 			<div class="section-title">
-				<div class="cata new">new</div>
-				<h2>Mas Valorados</h2>
+				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
+					<h2 style="color: #ffb320; font-weight: 700; letter-spacing: 2px; margin: 0;">Mas Valorados</h2>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
-							<div class="score yellow">9.4</div>
-						</div>
-						<div class="review-text">
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/alturamalbec.jpg">
+						<div class="score" style="background: rgba(255, 179, 32, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.4</div>
+					</div>
+						<div class="cuadro-negro">
 							<h5>Gran Altura Malbec</h5>
 							<p>Vino tinto de carácter intenso, con notas a ciruelas, moras y un toque de cacao. Taninos suaves y final prolongado, ideal para carnes y quesos.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
-							<div class="score purple">9.6</div>
-						</div>
-						<div class="review-text">
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/extrabrut.jpg">
+						<div class="score" style="background: rgba(105, 78, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.6</div>
+					</div>
+						<div class="cuadro-negro">
 							<h5>Espumante Extra Brut Bruma</h5>
 							<p>Espumante fresco y elegante, con burbuja fina y aromas cítricos. Seco, equilibrado y perfecto para celebraciones o aperitivos.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
-							<div class="score green">9.8</div>
-						</div>
-						<div class="review-text">
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/tardia.jpg">
+						<div class="score" style="background: rgba(78, 174, 96, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.8</div>
+					</div>
+						<div class="cuadro-negro">
 							<h5>Cosecha Tardía Dulce</h5>
 							<p>Dulce natural, suave y aromático, con notas a miel, durazno y flores blancas. Ideal para postres y tardes relajadas.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
-					<div class="review-item">
-						<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
-							<div class="score pink">9.7</div>
-						</div>
-						<div class="review-text">
+				<div class="review-item">
+					<div class="review-cover set-bg" data-setbg="img_plus/roserosa.png">
+						<div class="score" style="background: rgba(255, 32, 174, 0.6) !important; border: 3px solid #ffb320 !important; color: #fff !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;">9.7</div>
+					</div>
+						<div class="cuadro-negro">
 							<h5>Rosé Rosa Serena</h5>
 							<p>Rosado liviano y frutado, con aromas a frutilla y cereza. Fresco y suave, perfecto para comidas ligeras o disfrutar al aire libre.</p>
 						</div>
@@ -223,15 +205,39 @@
 	<!-- Footer section -->
 	<footer class="footer-section">
 		<div class="container">
-			<ul class="footer-menu">
-				<li><a href="index.php">Inicio</a></li>
-				<li><a href="reviewu.php">Juegos</a></li>
-				<li><a href="contact.php">Contacto</a></li>
-			</ul>
-			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados<i class="" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="img/logo.png" alt="Vinoteca G1" style="height: 60px; margin-bottom: 15px;">
+					<p style="color: #999; font-size: 14px; max-width: 300px;">Descubre los mejores vinos con la calidad y tradición que nos caracteriza.</p>
+				</div>
+				
+				<div class="footer-links">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Navegación</h5>
+					<ul class="footer-menu">
+						<li><a href="index.php"><i class="fa fa-angle-right"></i> Inicio</a></li>
+						<li><a href="reviewu.php"><i class="fa fa-angle-right"></i> Vinos</a></li>
+						<li><a href="contact.php"><i class="fa fa-angle-right"></i> Contacto</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-social">
+					<h5 style="color: #ffb320; margin-bottom: 20px; font-size: 18px;">Síguenos</h5>
+					<div class="social-links">
+						<a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="social-link"><i class="fa fa-youtube"></i></a>
+					</div>
+					<p style="color: #999; margin-top: 15px; font-size: 13px;"><i class="fa fa-envelope"></i> info@vinotecag1.com</p>
+					<p style="color: #999; font-size: 13px;"><i class="fa fa-phone"></i> +54 261 123-4567</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p class="copyright">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script> Vinoteca G1. Todos los derechos reservados.
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Footer section end -->

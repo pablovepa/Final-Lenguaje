@@ -42,36 +42,133 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>Login</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Login Administrador - Vinoteca G1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../gamepage/img/logo.png" rel="shortcut icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../gamepage/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../gamepage/css/style.css">
+    <style>
+        body {
+            background: url('../gamepage/img/pruebalogin.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .login-card {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            margin: 20px;
+        }
+        .login-card h4 {
+            color: #ffb320;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .login-card label {
+            color: #fff;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .login-card input {
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .login-card input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .login-card input:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #ffb320;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(255, 179, 32, 0.3);
+            outline: none;
+        }
+        .site-btn {
+            background: linear-gradient(135deg, #ffb320 0%, #ff9800 100%);
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            padding: 12px 30px;
+            width: 100%;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .site-btn:hover {
+            background: linear-gradient(135deg, #ff9800 0%, #ffb320 100%);
+            box-shadow: 0 5px 20px rgba(255, 179, 32, 0.4);
+            transform: translateY(-2px);
+            color: #fff;
+            text-decoration: none;
+        }
+        .alert {
+            background-color: rgba(220, 53, 69, 0.3);
+            border: 1px solid rgba(220, 53, 69, 0.5);
+            color: #fff;
+            border-radius: 5px;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 120px;
+            height: auto;
+        }
+    </style>
 </head>
-<body class="bg-light">
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-4">
-      <div class="card p-4 shadow">
-        <h4 class="text-center mb-3">Iniciar sesión</h4>
-        <?php if ($error): ?>
-          <div class="alert alert-danger"><?php echo $error; ?></div>
-        <?php endif; ?>
-        <form method="post" action="login.php">
-          <div class="mb-3">
+<body>
+
+<div class="login-card">
+    <div class="logo-container">
+        <img src="../gamepage/img/logo.png" alt="Vinoteca G1">
+    </div>
+    <h4 class="text-center">Login Administrador</h4>
+
+    <?php if ($error): ?>
+        <div class="alert alert-danger text-center"><?php echo $error; ?></div>
+    <?php endif; ?>
+
+    <form method="post" action="login.php">
+        <div class="mb-3">
             <label class="form-label">Usuario</label>
             <input type="text" name="usuario" class="form-control" value="<?php echo $valor_usuario; ?>" required>
-          </div>
-          <div class="mb-3">
+        </div>
+        <div class="mb-3">
             <label class="form-label">Contraseña</label>
             <input type="password" name="password" class="form-control" required>
-          </div>
-          <button class="btn btn-primary w-100" type="submit">Ingresar</button>
-        </form>
-      </div>
-    </div>
-  </div>
+        </div>
+        <button class="site-btn" type="submit">Ingresar</button>
+    </form>
 </div>
+
 </body>
 </html>
