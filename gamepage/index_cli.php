@@ -31,7 +31,8 @@
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="img/fotoprinc.jpg">
-				<div class="hs-text">
+				<div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); z-index: 1;"></div>
+				<div class="hs-text" style="position: relative; z-index: 2;">
 					<div class="container">
 						<div class="hero-box">
 							<h2>Vinoteca G1</h2>
@@ -54,20 +55,6 @@
 		</div>
 	</section>
 	<!-- Hero section end -->
-
-
-	<!-- Latest news section -->
-	<div class="latest-news-section">
-		<div class="ln-title">Nuestra seleccion</div>
-		<div class="news-ticker">
-			<div class="news-ticker-contant">
-				<div class="nt-item"><span class="new">Espumantes</span>Vinos con burbujas naturales obtenidas por una segunda fermentación. Son frescos, ligeros y festivos.</div>
-				<div class="nt-item"><span class="strategy">Dulces</span>Vinos elaborados con uvas muy maduras que conservan un alto contenido de azúcar. Son suaves, aromáticos y de sabor intenso.</div>
-				<div class="nt-item"><span class="racing">Rosados</span>Vinos frescos y suaves obtenidos de uvas tintas con breve contacto con las pieles. Combinan la ligereza de los blancos con un toque frutado de los tintos.</div>
-			</div>
-		</div>
-	</div>
-	<!-- Latest news section end -->
 
 
 	<!-- Feature section -->
@@ -139,11 +126,9 @@
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/granalturamalbec.jpg">
 							<div class="cata new">Gran Altura Malbec</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Descubrí la intensidad de los Andes</h5>
 							<p>Vino tinto elaborado con uvas de altura, que ofrece aromas a ciruelas, moras y un toque de cacao. En boca es equilibrado, con taninos suaves y un final prolongado. Ideal para carnes rojas y quesos intensos.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
@@ -152,11 +137,9 @@
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/brumadelosvalles.jpg">
 							<div class="cata racing">Bruma de los Valles</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Elegancia y frescura en cada burbuja</h5>
 							<p>Espumante de burbuja fina, con notas cítricas y frutales. Su sabor es seco, refrescante y perfecto para celebraciones, aperitivos o comidas ligeras. Una opción moderna y versátil.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
@@ -165,11 +148,9 @@
 						<div class="rgi-thumb set-bg" data-setbg="img_plus/rosaserena.jpg">
 							<div class="cata adventure">Rosé Serena</div>
 						</div>
-						<div class="rgi-content">
+						<div class="cuadro-negro">
 							<h5>Ligero, frutado y perfecto para cualquier momento</h5>
 							<p>Vino rosado de tono suave, con aromas a frutillas y flores blancas. En boca es fresco y equilibrado, ideal para tardes cálidas, ensaladas, sushi o pastas livianas.</p>
-							<a href="#" class="comment"></a>
-							
 						</div>
 					</div>	
 				</div>
