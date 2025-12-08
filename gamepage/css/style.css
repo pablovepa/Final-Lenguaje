@@ -721,14 +721,26 @@ ol {
 .review-item .review-cover {
 	position: relative;
 	margin-bottom: 30px;
-	height: 345px;
+	height: 450px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+	border: 3px solid rgba(255, 179, 32, 0.3);
+	transition: all 0.3s ease;
+	background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+}
+
+.review-item .review-cover:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 35px rgba(255, 179, 32, 0.4);
+	border-color: rgba(255, 179, 32, 0.6);
 }
 
 .review-item .review-cover .score {
 	position: absolute;
 	width: 54px;
 	height: 54px;
-	top: -27px;
+	top: 15px;
 	left: 26px;
 	padding-top: 15px;
 	font-size: 18px;

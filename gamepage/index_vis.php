@@ -139,7 +139,7 @@
 
 
 	<!-- Recent game section  -->
-	<section class="recent-game-section spad set-bg" data-setbg="img/uvas.jpg">
+	<section class="recent-game-section spad set-bg" data-setbg="img/vinotin.jpg">
 		<div class="container">
 			<div class="section-title">
 				<div style="background-color: rgba(0, 0, 0, 0.85); padding: 20px 45px; display: inline-block; border-radius: 3px; border-left: 4px solid #ffb320; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);">
