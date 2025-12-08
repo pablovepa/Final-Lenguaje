@@ -38,6 +38,20 @@
             <hr>
             <input type="text" name="telefono"  placeholder="Ingrese nro de Telefono" autofocus>
             </div> 
+            <label for="pais">País:</label>
+                <select name="pais" id="pais" required>
+                    <option value="">Seleccione un país...</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="México">México</option>
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Perú">Perú</option>
+                </select>
             <div class="form-group">
             <input type="submit" class="btn btn-success" name="guardar_registro" value="Guardar"> </div>
             </div>
@@ -45,5 +59,8 @@
         </form>
     </div>
 </div>
-
+  <div class="card-body">
+    <form action="../indexu.php" method="POST">
+<input type="submit" class="btn btn-success" value="Volver"> </div>
+            </div
 <?php include __DIR__ . '/../includes/footer.php'; ?>

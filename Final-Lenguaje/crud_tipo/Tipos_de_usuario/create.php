@@ -16,5 +16,8 @@
         </div>
     </div>
 </div>
-
+<div class="card-body">
+    <form action="../index.php" method="POST">
+<input type="submit" class="btn btn-success" value="Volver"> </div>
+            </div>
 <?php include __DIR__ . '/../includes/footer.php'; ?>

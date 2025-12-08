@@ -22,13 +22,14 @@
                             <th>Nombre Usuario</th>
                             <th>Email</th>
                             <th>Telefono</th>
+                            <th>País</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         $query = "SELECT u.id, u.usuario, u.password, 
                         t.nombre AS tipo_usuario,
-                         u.nombre_usuario, u.email, u.telefono
+                         u.nombre_usuario, u.email, u.telefono, u.pais
                         FROM tbl_usuarios u
                         INNER JOIN tbl_tipos_usuarios t 
                         ON u.tipo_usuario = t.id";
@@ -45,6 +46,7 @@
                                 <td><?php echo $row['nombre_usuario']?></td>
                                 <td><?php echo $row['email']?></td>
                                 <td><?php echo $row['telefono']?></td>
+                                <td><?php echo $row['pais']?></td>
                                 <td>
                                     <a href="updateDatau.php?id=<?php echo $row['id']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>
@@ -59,6 +61,10 @@
             </div>
         </div>
     </div> 
+      <div class="card-body">
+    <form action="../indexu.php" method="POST">
+<input type="submit" class="btn btn-success" value="Volver"> </div>
+            </div
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
                             
