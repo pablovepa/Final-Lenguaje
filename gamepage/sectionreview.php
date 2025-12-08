@@ -174,6 +174,7 @@
 	padding: 3px !important;
 	line-height: 1.2 !important;
 }
+<<<<<<< HEAD
  </style>
   <section class="review-section spad set-bg" data-setbg="https://img.freepik.com/foto-gratis/copa-vino-tinto-botella-barra-bar_107420-65845.jpg?semt=ais_hybrid&w=740&q=80">
 	<div class="container">
@@ -247,3 +248,6 @@
 	</div>
 </section>
 <!-- Review section end -->
+=======
+</style>
+>>>>>>> 35bc0cefd214c9434d71b9e90e0cc5824c0e55c2
