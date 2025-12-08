@@ -44,7 +44,7 @@
                                 <td><?php echo $row['nombre_usuario']?></td>
                                 <td><?php echo $row['email']?></td>
                                 <td><?php echo $row['telefono']?></td> 
-                                <td><?php echo $row['pais']?></td>                          
+                               <td><?php echo $row['pais']?></td>                          
                              
                                 <td>
                                     <a href="deleteDatau.php?id=<?php echo $row['id']?>">
