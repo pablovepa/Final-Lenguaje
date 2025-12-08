@@ -38,7 +38,26 @@
             <hr>
             <input type="text" name="telefono"  placeholder="Ingrese nro de Telefono" autofocus>
             </div> 
-            
+               
+           <label for="pais">País:</label>
+                    <select name="pais" id="pais" required>
+                        <option value="">-- Seleccione un país --</option>
+
+                        <?php
+                        // Consulta para traer los países
+                        $query_paises = "SELECT id_pais, nombre FROM pais ORDER BY nombre ASC";
+                        $result_paises = mysqli_query($conn, $query_paises);
+
+                        if ($result_paises && mysqli_num_rows($result_paises) > 0) {
+                            while ($row_pais = mysqli_fetch_assoc($result_paises)) {
+                                echo "<option value='{$row_pais['id_pais']}'>{$row_pais['nombre']}</option>";
+                            }
+                        } else {
+                            echo "<option value=''>No hay países disponibles</option>";
+                        }
+                        ?>
+                    </select>
+                    </hr>
             <div class="form-group">
             <input type="submit" class="btn btn-success" name="guardar_registro" value="Guardar"> </div>
             </div>
@@ -49,5 +68,5 @@
   <div class="card-body">
     <form action="../indexu.php" method="POST">
 <input type="submit" class="btn btn-success" value="Volver"> </div>
-            </div
+        
 <?php include __DIR__ . '/../includes/footer.php'; ?>

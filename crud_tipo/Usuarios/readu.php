@@ -18,6 +18,7 @@
                             <th>Nombre Usuario</th>
                             <th>Email</th>
                             <th>Telefono</th>
+                            <th>País</th>
                            
                         </tr>
                     </thead>
@@ -25,10 +26,13 @@
                         <?php
                         $query = "SELECT u.id, u.usuario, u.password, 
                         t.nombre AS tipo_usuario,
-                         u.nombre_usuario, u.email, u.telefono
+                         u.nombre_usuario, u.email, u.telefono,
+                         p.nombre AS pais
                         FROM tbl_usuarios u
                         INNER JOIN tbl_tipos_usuarios t 
-                        ON u.tipo_usuario = t.id";
+                        ON u.tipo_usuario = t.id
+                        INNER JOIN pais p
+                        ON u.pais = p.id_pais";
                               
                        
                         $result_alumnos = mysqli_query($conn, $query);
@@ -42,7 +46,7 @@
                                 <td><?php echo $row['nombre_usuario']?></td>
                                 <td><?php echo $row['email']?></td>
                                 <td><?php echo $row['telefono']?></td>                           
-                              
+                                <td><?php echo $row['pais']?></td>                          
                             </tr>
                         <?php } ?>
                         
