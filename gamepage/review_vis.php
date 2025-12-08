@@ -236,7 +236,7 @@
                 echo "<p class='card-text'><strong>Tipo:</strong> " . htmlspecialchars($row['tipo']) . "</p>";
                 echo "<p class='card-text'><strong>Proveedor:</strong> " . htmlspecialchars($row['proveedor']) . "</p>";
                 echo "<p class='card-text'><strong>Bodega:</strong> " . htmlspecialchars($row['bodega']) . "</p>";
-                echo "<a href='registro_cli.php?id=" . urlencode($row['id_vinos']) . "' class='btn btn-primary w-100 mt-2'>Comprar</a>";
+                echo "<a href='login_cli.php?redirect=comprar&id=" . urlencode($row['id_vinos']) . "' class='btn btn-primary w-100 mt-2'>Comprar</a>";
                 echo "</div></div></div>";
             }
         } else {
@@ -320,7 +320,7 @@
 							<span class="price-discount">$6000</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="login_cli.php?redirect=comprar&nombre=Gran Altura Malbec" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -335,7 +335,7 @@
 							<span class="price-discount">$6000</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="login_cli.php?redirect=comprar&nombre=Espumante Extra Brut Bruma" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -350,7 +350,7 @@
 							<span class="price-discount">$5400</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="login_cli.php?redirect=comprar&nombre=Cosecha Tardía Dulce" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -365,7 +365,7 @@
 							<span class="price-discount">$2700</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="login_cli.php?redirect=comprar&nombre=Rosé Rosa Serena" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 		</div>

@@ -23,11 +23,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($fila && ($password === $fila['password'] || password_verify($password, $fila['password']))) {
             $_SESSION['usuario'] = $fila['usuario'];
             $_SESSION['tipo'] = $fila['tipo_usuario'];
-            header("Location: index_cli.php");
-            if ($fila['tipo_usuario'] == 1) {
+            
+            // Verificar si hay una redirección pendiente
+            if (isset($_POST['redirect']) && $_POST['redirect'] === 'comprar') {
+                if (isset($_POST['vino_id']) && $_POST['vino_id'] !== '') {
+                    header("Location: comprar.php?id=" . urlencode($_POST['vino_id']));
+                } elseif (isset($_POST['vino_nombre']) && $_POST['vino_nombre'] !== '') {
+                    header("Location: comprar.php?nombre=" . urlencode($_POST['vino_nombre']));
+                } else {
+                    header("Location: index_cli.php");
+                }
+            } else {
                 header("Location: index_cli.php");
-                exit();
             }
+            exit();
         } else {
             $error = "Usuario o contraseña incorrectos.";
         }
@@ -139,6 +148,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
 
     <form method="post" action="login_cli.php">
+        <?php if (isset($_GET['redirect'])): ?>
+            <input type="hidden" name="redirect" value="<?php echo htmlspecialchars($_GET['redirect']); ?>">
+        <?php endif; ?>
+        <?php if (isset($_GET['id'])): ?>
+            <input type="hidden" name="vino_id" value="<?php echo htmlspecialchars($_GET['id']); ?>">
+        <?php endif; ?>
+        <?php if (isset($_GET['nombre'])): ?>
+            <input type="hidden" name="vino_nombre" value="<?php echo htmlspecialchars($_GET['nombre']); ?>">
+        <?php endif; ?>
         <input type="text" name="usuario" class="form-control" placeholder="Nombre de usuario" value="<?php echo $valor_usuario; ?>" required>
         <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
         <button class="site-btn" type="submit">Iniciar</button>

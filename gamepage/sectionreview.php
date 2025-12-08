@@ -195,7 +195,7 @@
 							<span class="price-discount">$6000</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="comprar.php?nombre=Gran Altura Malbec" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -210,7 +210,7 @@
 							<span class="price-discount">$6000</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="comprar.php?nombre=Espumante Extra Brut Bruma" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -225,7 +225,7 @@
 							<span class="price-discount">$5400</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="comprar.php?nombre=Cosecha Tardía Dulce" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
@@ -240,7 +240,7 @@
 							<span class="price-discount">$2700</span>
 						</div>
 					</div>
-					<button class="buy-btn">Comprar</button>
+					<a href="comprar.php?nombre=Rosé Rosa Serena" class="buy-btn" style="text-decoration: none; display: inline-block; text-align: center;">Comprar</a>
 				</div>
 			</div>
 		</div>
