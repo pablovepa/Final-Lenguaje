@@ -76,8 +76,8 @@
 						<div class="col-md-9">
 							<ul class="contact-info-list" style="list-style: none; padding: 0;">
 								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">Direccion</div><div class="cf-right" style="color: #fff;">Rivadavia</div></li>
-								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">Telefono</div><div class="cf-right" style="color: #fff;">+54 345 7953 32453</div></li>
-								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">E-mail</div><div class="cf-right" style="color: #fff;">supremaciagamer@gmail.com</div></li>
+								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">Telefono</div><div class="cf-right" style="color: #fff;">+54 264 6250239</div></li>
+								<li style="margin-bottom: 15px;"><div class="cf-left" style="color: #ffb320; font-weight: 600;">E-mail</div><div class="cf-right" style="color: #fff;">info@vinotecag1.com</div></li>
 							</ul>
 						</div>
 					</div>
