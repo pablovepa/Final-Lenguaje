@@ -34,21 +34,11 @@
 				<div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)); z-index: 1;"></div>
 				<div class="hs-text" style="position: relative; z-index: 2;">
 					<div class="container">
-						<div class="hero-box">
-							<h2>Vinoteca G1</h2>
-							<p>Cada botella guarda una historia</p>
+						<div class="hero-box" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.85), rgba(26, 26, 26, 0.75)); padding: 50px 60px; border-radius: 10px; border-left: 6px solid #ffb320; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); max-width: 700px;">
+							<h2 style="color: #ffffff; font-size: 72px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);">Vinoteca G1</h2>
+							<p style="color: #d4af37; font-size: 24px; font-weight: 300; font-style: italic; letter-spacing: 1px; margin: 0; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">Cada botella guarda una historia</p>
 						</div>
 						
-					</div>
-				</div>
-			</div>
-			<div class="hs-item set-bg" data-setbg="img/fotoprinc.jpg">
-				<div class="hs-text">
-					<div class="container">
-						<div class="hero-box">
-							<h2>Vinoteca G1</h2>
-							<p>Cada botella guarda una historia</p>
-						</div>
 					</div>
 				</div>
 			</div>

@@ -346,7 +346,8 @@ ol {
 
 .hero-slider .hs-text {
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: top;
+	padding-top: 100px;
 	position: relative;
 	z-index: 2;
 }
