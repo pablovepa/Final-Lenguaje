@@ -9,15 +9,15 @@ if (isset($_POST['guardar_registro'])) {
     $nombre_usuario = $_POST['nombre_usuario'];
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
-    $pais = $_POST['pais']; // Valor por defecto para el campo pais
+   // $pais = $_POST['pais']; // Valor por defecto para el campo pais
   
 
     // (Opcional) encriptar contraseña
     // $password = password_hash($password, PASSWORD_DEFAULT);
 
     // Armamos el INSERT (sin especificar id, porque es AUTO_INCREMENT)
-    $query = "INSERT INTO tbl_usuarios (usuario, password, tipo_usuario, nombre_usuario, email, telefono, pais)
-              VALUES ('$usuario', '$password', '$tipo_usuario', '$nombre_usuario', '$email', '$telefono', '$pais')";
+    $query = "INSERT INTO tbl_usuarios (usuario, password, tipo_usuario, nombre_usuario, email, telefono /*, pais*/)
+              VALUES ('$usuario', '$password', '$tipo_usuario', '$nombre_usuario', '$email', '$telefono' /*, '$pais'*/)";
 
     $result = mysqli_query($conn, $query);
 
