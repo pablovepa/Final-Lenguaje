@@ -38,11 +38,11 @@
             <hr>
             <input type="text" name="telefono"  placeholder="Ingrese nro de Telefono" autofocus>
             </div> 
-               
+            <div>   
            <label for="pais">País:</label>
                     <select name="pais" id="pais" required>
-                        <option value="">-- Seleccione un país --</option>
-
+                        <option value="">-- Seleccione un país -- </option>
+                </div>
                         <?php
                         // Consulta para traer los países
                         $query_paises = "SELECT id_pais, nombre FROM pais ORDER BY nombre ASC";
@@ -64,9 +64,11 @@
             <div class="form-group">
         </form>
     </div>
-</div>
-  <div class="card-body">
+    <div class="card-body">
     <form action="../indexu.php" method="POST">
-<input type="submit" class="btn btn-success" value="Volver"> </div>
+<input type="submit" class="btn btn-success" value="Volver"> 
+</div>
+</div>
+
         
 <?php include __DIR__ . '/../includes/footer.php'; ?>
