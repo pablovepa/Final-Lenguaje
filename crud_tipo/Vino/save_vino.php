@@ -10,6 +10,7 @@ if (isset($_POST['guardar_registro'])) {
     $id_proveedores = $_POST['id_proveedores'];
     $id_origen      = $_POST['id_origen'];
     $posible_proveedor = $_POST['posible_proveedor'];
+    $id_envase      = $_POST['id_envase'];
 
     // Procesar imagen
     $imagen_nombre = $_FILES['imagen']['name'];
@@ -32,8 +33,8 @@ if (isset($_POST['guardar_registro'])) {
     // Mover imagen a carpeta
     if (move_uploaded_file($imagen_temp, $ruta_destino)) {
         // Insertar en la base de datos
-        $query = "INSERT INTO vinos (nombrevino, precio, stock, id_tipos, id_bodegas, id_proveedores, id_origen, posible_proveedor, imagen) 
-                  VALUES ('$nombrevino', '$precio', '$stock', '$id_tipos', '$id_bodegas', '$id_proveedores', '$id_origen', '$posible_proveedor', '$imagen_nombre')";
+        $query = "INSERT INTO vinos (nombrevino, precio, stock, id_tipos, id_bodegas, id_proveedores, id_origen, posible_proveedor, imagen, id_envase) 
+                  VALUES ('$nombrevino', '$precio', '$stock', '$id_tipos', '$id_bodegas', '$id_proveedores', '$id_origen', '$posible_proveedor', '$imagen_nombre', '$id_envase')";
         $result = mysqli_query($conn, $query);
 
         if ($result) {

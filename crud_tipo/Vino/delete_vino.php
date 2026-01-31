@@ -17,6 +17,8 @@
                             <th>Proveedor</th>
                             <th>origen</th>
                             <th>posible_proveedor</th>
+                            <th>envase</th>
+                            <th>tamaño</th>
 
                         </tr>
                     </thead>
@@ -31,7 +33,9 @@
                                         b.nombre_bodega  AS bodega,
                                         p.nombre AS proveedor,
                                         o.nombre AS origen,
-                                        v.posible_proveedor
+                                        v.posible_proveedor,
+                                        e.nombre AS envase,
+                                        e.tamaño AS tamano
 
                                     FROM vinos v
                                     LEFT JOIN tipos t 
@@ -42,7 +46,10 @@
                                         ON v.id_proveedores = p.id_proveedores
                                          left JOIN origen o
                                         ON v.id_origen = o.id_origen
-                                        ORDER BY v.nombrevino ASC
+                                    LEFT JOIN envase e
+                                        ON v.id_envase = e.id_envase
+                                     ORDER BY v.nombrevino ASC
+                                        
                                        
  ";
 
@@ -57,7 +64,9 @@
                                 <td><?= $row['proveedor'] ?></td>
                                 <td><?= $row['bodega'] ?></td> 
                                 <td><?= $row['origen'] ?></td>
-                                <td><?= $row['posible_proveedor'] ?></td>                              
+                                <td><?= $row['posible_proveedor'] ?></td> 
+                                <td><?= $row['envase'] ?></td>   
+                                <td><?= $row['tamano'] ?></td>   
                                 <td>
                                     <a href="deleteData_vino.php?id=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>

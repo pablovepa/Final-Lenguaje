@@ -30,12 +30,16 @@ SELECT
     b.nombre_bodega,
     p.nombre AS proveedor,
     o.nombre AS origen,
+    e.nombre AS envase,
+    e.tamaño AS tamaño,
     v.posible_proveedor AS posible_proveedor
 FROM vinos v
 LEFT JOIN tipos t ON v.id_tipos = t.id_tipos
 LEFT JOIN bodegas b ON v.id_bodegas = b.id_bodegas
 LEFT JOIN proveedores p ON v.id_proveedores = p.id_proveedores
 LEFT JOIN origen o ON v.id_origen = o.id_origen
+LEFT JOIN envase e ON v.id_envase = e.id_envase
+
 
 ORDER BY v.nombrevino ASC
 ";
@@ -53,6 +57,8 @@ if ($result && mysqli_num_rows($result) > 0) {
                 <strong>Tipo:</strong> " . htmlspecialchars($row['tipo'] ?? 'Sin tipo') . "<br>
                 <strong>Bodega:</strong> " . htmlspecialchars($row['nombre_bodega'] ?? 'Sin bodega') . "<br>
                 <strong>Proveedor:</strong> " . htmlspecialchars($row['proveedor'] ?? 'Sin proveedor') . "<br>
+                <strong>envase:</strong> " . htmlspecialchars($row['envase'] ?? 'Sin envase') . "<br>
+                <strong>tamaño:</strong> " . htmlspecialchars($row['tamaño'] ?? 'Sin tamaño') . "<br>
                 <strong>Precio:</strong> $" . number_format($row['precio'], 2) . "<br>
                 <strong>Stock:</strong> " . htmlspecialchars($row['stock']) . "<br>
                 <strong>Posible_Proveedor:</strong> " . htmlspecialchars($row['posible_proveedor'] ?? 'Sin posible proveedor') . "<br>

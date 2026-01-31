@@ -59,6 +59,31 @@
                         ?>
                     </select>
 
+                    <!-- ENVASE  -->
+                    <label class="form-label">envase</label>
+                    <select name="id_envase" class="form-control mb-4" required>
+                        <option value="">-- Seleccione el envasee --</option>
+                        <?php
+                        $envase = mysqli_query($conn, "SELECT id_envase, nombre FROM envase");
+                        while ($row = mysqli_fetch_assoc($envase)) {
+                            echo "<option value='{$row['id_envase']}'>" . htmlspecialchars($row['nombre']) . "</option>";
+                        }
+                        ?>
+                    </select>
+
+                    <!-- tamaño  -->
+                    <label class="form-label">tamaño</label>
+                    <select name="id_tamaño" class="form-control mb-4" required>
+                        <option value="">-- Seleccione el tamaño --</option>
+                        <?php
+                        $envase = mysqli_query($conn, "SELECT id_envase, tamaño FROM envase");
+                        while ($row = mysqli_fetch_assoc($envase)) {
+                            echo "<option value='{$row['id_envase']}'>" . htmlspecialchars($row['tamaño']) . "</option>";
+                        }
+                        ?>
+                    </select>
+                    
+
                        <label class="form-label">Origen</label>
                     <select name="id_origen" class="form-control mb-3" required>
                         <option value="">-- Seleccione tipo --</option>
