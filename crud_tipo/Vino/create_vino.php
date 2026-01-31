@@ -59,6 +59,20 @@
                         ?>
                     </select>
 
+                       <label class="form-label">Origen</label>
+                    <select name="id_origen" class="form-control mb-3" required>
+                        <option value="">-- Seleccione tipo --</option>
+                        <?php
+                        $origen = mysqli_query($conn, "SELECT id_origen, nombre FROM origen");
+                        while ($row = mysqli_fetch_assoc($origen)) {
+                            echo "<option value='{$row['id_origen']}'>" . htmlspecialchars($row['nombre']) . "</option>";
+                        }
+                        ?>
+                    </select>
+
+                    <input type="text" name="posible_proveedor" class="form-control mb-3"
+                        placeholder="posible proveedor" required>
+
                     <!-- IMAGEN -->
                     <label class="form-label">Imagen del vino</label>
                     <input type="file" name="imagen" class="form-control mb-4" accept="image/*" required>

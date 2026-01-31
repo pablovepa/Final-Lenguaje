@@ -18,6 +18,8 @@
                         <th>Tipo</th>
                         <th>Proveedor</th>
                         <th>Bodega</th>
+                        <th>Origen</th>
+                        <th>Posible_Proveedor</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -31,11 +33,15 @@
                         v.stock,
                         t.nombre AS tipo,
                         b.nombre_bodega AS bodega,
-                        p.nombre AS proveedor
+                        p.nombre AS proveedor,
+                        o.nombre AS origen,
+                        v.posible_proveedor AS posible_proveedor
                     FROM vinos v
                     LEFT JOIN tipos t ON v.id_tipos = t.id_tipos
                     LEFT JOIN bodegas b ON v.id_bodegas = b.id_bodegas
                     LEFT JOIN proveedores p ON v.id_proveedores = p.id_proveedores
+                    LEFT JOIN origen o ON v.id_origen = o.id_origen
+                 
                     ORDER BY v.nombrevino ASC
                 ";
 
@@ -49,6 +55,8 @@
                         <td><?= $row['tipo'] ?></td>
                         <td><?= $row['proveedor'] ?></td>
                         <td><?= $row['bodega'] ?></td>
+                        <td><?= $row['origen'] ?></td>
+                        <td><?= $row['posible_proveedor'] ?></td>
                         <td>
                               <a href="updateData_vino.php?id_vinos=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-warning" name="update">Modificar</button>

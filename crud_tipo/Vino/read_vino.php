@@ -28,11 +28,15 @@ SELECT
     v.stock,
     t.nombre AS tipo,
     b.nombre_bodega,
-    p.nombre AS proveedor
+    p.nombre AS proveedor,
+    o.nombre AS origen,
+    v.posible_proveedor AS posible_proveedor
 FROM vinos v
 LEFT JOIN tipos t ON v.id_tipos = t.id_tipos
 LEFT JOIN bodegas b ON v.id_bodegas = b.id_bodegas
 LEFT JOIN proveedores p ON v.id_proveedores = p.id_proveedores
+LEFT JOIN origen o ON v.id_origen = o.id_origen
+
 ORDER BY v.nombrevino ASC
 ";
 
@@ -44,12 +48,16 @@ if ($result && mysqli_num_rows($result) > 0) {
         echo "<div class='card shadow'>";
         echo "<div class='card-body'>";
         echo "<h5 class='card-title'>" . htmlspecialchars($row['nombrevino']) . "</h5>";
+        
         echo "<p class='card-text'>
                 <strong>Tipo:</strong> " . htmlspecialchars($row['tipo'] ?? 'Sin tipo') . "<br>
                 <strong>Bodega:</strong> " . htmlspecialchars($row['nombre_bodega'] ?? 'Sin bodega') . "<br>
                 <strong>Proveedor:</strong> " . htmlspecialchars($row['proveedor'] ?? 'Sin proveedor') . "<br>
                 <strong>Precio:</strong> $" . number_format($row['precio'], 2) . "<br>
-                <strong>Stock:</strong> " . htmlspecialchars($row['stock']) . "
+                <strong>Stock:</strong> " . htmlspecialchars($row['stock']) . "<br>
+                <strong>Posible_Proveedor:</strong> " . htmlspecialchars($row['posible_proveedor'] ?? 'Sin posible proveedor') . "<br>
+                <strong>Origen:</strong> " . htmlspecialchars($row['origen'] ?? 'Sin origen') . 
+                "
               </p>";
         echo "</div>";
         echo "</div>";

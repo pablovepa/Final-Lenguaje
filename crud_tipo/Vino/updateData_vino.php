@@ -17,6 +17,8 @@ if (isset($_GET['id_vinos'])) {
         $id_tipos       = $row['id_tipos'];
         $id_bodegas     = $row['id_bodegas'];
         $id_proveedores = $row['id_proveedores'];
+        $id_origen      = $row['id_origen'];
+        $posible_proveedor = $row['posible_proveedor'];
         $imagen_actual  = $row['imagen'];
     }
 }
@@ -29,6 +31,8 @@ if (isset($_POST['update2'])) {
     $id_tipos       = $_POST['id_tipos'];
     $id_bodegas     = $_POST['id_bodegas'];
     $id_proveedores = $_POST['id_proveedores'];
+    $posible_proveedor = $_POST['posible_proveedor'];
+    $id_origen      = $_POST['id_origen'];
 
     // Procesar nueva imagen si se sube
     if (!empty($_FILES['imagen']['name'])) {
@@ -53,7 +57,10 @@ if (isset($_POST['update2'])) {
                     id_tipos = '$id_tipos',
                     id_bodegas = '$id_bodegas',
                     id_proveedores = '$id_proveedores',
+                    id_origen = '$id_origen',
+                    posible_proveedor = '$posible_proveedor',
                     imagen = '$imagen_nombre'
+
                   WHERE id_vinos = $id_vinos";
     } else {
         // Actualizar sin cambiar imagen
@@ -64,6 +71,8 @@ if (isset($_POST['update2'])) {
                     id_tipos = '$id_tipos',
                     id_bodegas = '$id_bodegas',
                     id_proveedores = '$id_proveedores'
+                    id_origen = '$id_origen'
+                    posible_proveedor = '$posible_proveedor'
                   WHERE id_vinos = $id_vinos";
     }
 
@@ -136,6 +145,25 @@ if (isset($_POST['update2'])) {
                     }
                     ?>
                 </select>
+            </div>
+
+            
+            <div class="form-group mb-3">
+                <label>Origen</label>
+                <select name="id_origen" class="form-control" required>
+                    <?php
+                    $origen = mysqli_query($conn, "SELECT id_origen, nombre FROM origen");
+                    while ($o = mysqli_fetch_assoc($origen)) {
+                        $selected = ($o['id_origen'] == $id_origen) ? 'selected' : '';
+                        echo "<option value='{$o['id_origen']}' $selected>" . htmlspecialchars($o['nombre']) . "</option>";
+                    }
+                    ?>
+                </select>
+            </div>
+
+              <div class="form-group mb-3">
+                <label>posible proveedor</label>
+                <input type="text" name="posible_proveedor" class="form-control" value="<?= htmlspecialchars($posible_proveedor) ?>" required>
             </div>
 
             <div class="form-group mb-3">

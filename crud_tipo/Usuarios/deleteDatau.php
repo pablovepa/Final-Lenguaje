@@ -19,4 +19,4 @@ if(isset($_GET['id'])){
     //si quisiera redireccionar a index directamente: ?>
     <script>
     window.location = "deleteu.php";
-    </script>
+    </script> 

@@ -14,7 +14,8 @@ if(mysqli_num_rows($result) ==1) {
     $nombre_usuario = $row['nombre_usuario'];
     $email = $row['email'];
     $telefono = $row['telefono'];
-   // $pais = $row['pais'];
+    $domicilio = $row['domicilio'];
+    $pais = $row['pais'];
 
     }
 }
@@ -26,11 +27,12 @@ if (isset($_POST['update2'])){
     $nombre_usuario = $_POST['nombre_usuario'];
     $email = $_POST['email'];
     $telefono = $_POST['telefono'];
-   // $pais = $_POST['pais'];
+    $domicilio = $_POST['domicilio'];
+    $pais = $_POST['pais'];
 
     $query = "UPDATE tbl_usuarios
         SET usuario = '$usuario', password = '$password', tipo_usuario = '$tipo_usuario',
-        nombre_usuario = '$nombre_usuario' , email = '$email' , telefono = '$telefono'/*, pais = '$pais'*/                           
+        nombre_usuario = '$nombre_usuario' , email = '$email' , telefono = '$telefono', domicilio = '$domicilio', pais = '$pais'                           
             WHERE id = $codigo";
                         // die( $query);
     $result = mysqli_query($conn,$query);
@@ -91,24 +93,33 @@ if (isset($_POST['update2'])){
                 <label for="telefono">Teléfono:</label>
                 <input type="text" name="telefono" class="form-control" value="<?php echo $telefono; ?>">
             </div>
-         <!--  <label for="pais">País:</label>
+            <div class="form-group mb-4">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" class="form-control" value="<?php echo $telefono; ?>">
+            </div>
+            <div class="form-group mb-4">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" class="form-control" value="<?php echo $domicilio; ?>">
+            </div>
+            <div class="form-group mb-3">
+          <label for="pais">País:</label>
                     <select name="pais" id="pais" required>
                         <option value="">-- Seleccione un país --</option>
-
+                 </div>
                         <?php
-                        // Consulta para traer los países
-                     //   $query_paises = "SELECT id_pais, nombre FROM pais ORDER BY nombre ASC";
-                     //   $result_paises = mysqli_query($conn, $query_paises);
+                         //Consulta para traer los países
+                       $query_paises = "SELECT id_pais, nombre FROM pais ORDER BY nombre ASC";
+                       $result_paises = mysqli_query($conn, $query_paises);
 
-                       // if ($result_paises && mysqli_num_rows($result_paises) > 0) {
-                         //   while ($row_pais = mysqli_fetch_assoc($result_paises)) {
-                          //      echo "<option value='{$row_pais['id_pais']}'>{$row_pais['nombre']}</option>";
-                          //  }
-                      //  } else {
-                       //     echo "<option value=''>No hay países disponibles</option>";
-                      //  }
+                       if ($result_paises && mysqli_num_rows($result_paises) > 0) {
+                         while ($row_pais = mysqli_fetch_assoc($result_paises)) {
+                              echo "<option value='{$row_pais['id_pais']}'>{$row_pais['nombre']}</option>";
+                            }
+                        } else {
+                           echo "<option value=''>No hay países disponibles</option>";
+                        }
                         ?>
-                    </select>-->
+                    </select>
             <button class="btn btn-success w-100" name="update2">Actualizar</button>
         </form>
     </div>

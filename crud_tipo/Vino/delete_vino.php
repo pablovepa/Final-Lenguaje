@@ -15,6 +15,9 @@
                             <th>Tipo</th>
                             <th>Bodega</th>
                             <th>Proveedor</th>
+                            <th>origen</th>
+                            <th>posible_proveedor</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -26,7 +29,10 @@
                                         v.stock,
                                         t.nombre    AS tipo,
                                         b.nombre_bodega  AS bodega,
-                                        p.nombre AS proveedor
+                                        p.nombre AS proveedor,
+                                        o.nombre AS origen,
+                                        v.posible_proveedor
+
                                     FROM vinos v
                                     LEFT JOIN tipos t 
                                         ON v.id_tipos = t.id_tipos
@@ -34,8 +40,11 @@
                                         ON v.id_bodegas = b.id_bodegas
                                     LEFT JOIN proveedores p 
                                         ON v.id_proveedores = p.id_proveedores
+                                         left JOIN origen o
+                                        ON v.id_origen = o.id_origen
                                         ORDER BY v.nombrevino ASC
-                                    ";
+                                       
+ ";
 
                                $result_alumnos = mysqli_query($conn, $query);
 
@@ -46,7 +55,9 @@
                                 <td><?= $row['stock'] ?></td>
                                 <td><?= $row['tipo'] ?></td>
                                 <td><?= $row['proveedor'] ?></td>
-                                <td><?= $row['bodega'] ?></td>                               
+                                <td><?= $row['bodega'] ?></td> 
+                                <td><?= $row['origen'] ?></td>
+                                <td><?= $row['posible_proveedor'] ?></td>                              
                                 <td>
                                     <a href="deleteData_vino.php?id=<?php echo $row['id_vinos']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>
